@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Banking Chatbot</title>
+</head>
+<body>
+
+    <h1>AI Banking Chatbot System</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <textarea id="message" name="message" rows="5" cols="60"
+            placeholder="Type your message here..."></textarea>
+        <button type="button" onclick="startListening()">
+    🎤 Speak
+</button>
+        <br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <br>
+
+    {% if response %}
+        <h3>Bot Response:</h3>
+        <p id="bot-response">{{ response }}</p>
+
+<button onclick="speakResponse()">
+    🔊 Read Response
+</button>
+    {% endif %}
+
+    <script>
+function speakResponse() {
+
+    let text =
+        document.getElementById(
+            "bot-response"
+        ).innerText;
+
+    let speech =
+        new SpeechSynthesisUtterance(text);
+
+    speech.lang = "en-US";
+
+    window.speechSynthesis.speak(speech);
+}
+</script>
+<script>
+
+function startListening() {
+
+    const recognition =
+        new webkitSpeechRecognition();
+
+    recognition.lang = "en-US";
+
+    recognition.start();
+
+    recognition.onresult = function(event) {
+
+        let transcript =
+            event.results[0][0].transcript;
+
+        document.getElementById(
+            "message"
+        ).value = transcript;
+    };
+}
+
+</script>
+</body>
+</html>

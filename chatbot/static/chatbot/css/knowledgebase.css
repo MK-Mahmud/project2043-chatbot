@@ -1,0 +1,240 @@
+/* ==========================================================
+   ABC BANK KNOWLEDGE BASE
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#eef3f8;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header{
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+.header h1{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.header p{
+
+    font-size:16px;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:35px auto;
+
+}
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+.top-bar{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn-add{
+
+    background:#198754;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-add:hover{
+
+    background:#157347;
+
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+table{
+
+    width:100%;
+
+    background:white;
+
+    border-collapse:collapse;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+thead{
+
+    background:#003366;
+
+    color:white;
+
+}
+
+th{
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+tbody tr:hover{
+
+    background:#eef5ff;
+
+}
+
+/* ==========================================================
+   ACTION BUTTONS
+========================================================== */
+
+.edit{
+
+    display:inline-block;
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+.edit:hover{
+
+    background:#0b5ed7;
+
+}
+
+.delete{
+
+    display:inline-block;
+
+    background:#dc3545;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    transition:.3s;
+
+}
+
+.delete:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .container{
+
+        width:98%;
+
+    }
+
+    table{
+
+        font-size:14px;
+
+    }
+
+    th,td{
+
+        padding:10px;
+
+    }
+
+}

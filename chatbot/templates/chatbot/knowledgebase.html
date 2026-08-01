@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Knowledge Base Management</title>
+
+    <link rel="stylesheet"
+          href="{% static 'chatbot/css/knowledgebase.css' %}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>🏦 ABC Bank Knowledge Base</h1>
+
+    <p>Manage Chatbot Questions and Answers</p>
+
+</div>
+
+<div class="container">
+
+    <div class="top-bar">
+
+        <a href="{% url 'add_knowledge' %}" class="btn-add">
+
+            ➕ Add New Knowledge
+
+        </a>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>Intent</th>
+
+            <th>English Question</th>
+
+            <th>Hausa Question</th>
+
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% for item in knowledge %}
+
+        <tr>
+
+            <td>{{ item.intent.intent_name }}</td>
+
+            <td>{{ item.question_en }}</td>
+
+            <td>{{ item.question_ha }}</td>
+
+            <td>
+
+                <a href="{% url 'edit_knowledge' item.id %}"
+                   class="edit">
+
+                    Edit
+
+                </a>
+
+                <a href="{% url 'delete_knowledge' item.id %}"
+                   class="delete">
+
+                    Delete
+
+                </a>
+
+            </td>
+
+        </tr>
+
+        {% empty %}
+
+        <tr>
+
+            <td colspan="4">
+
+                No Knowledge Available
+
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+</body>
+
+</html>

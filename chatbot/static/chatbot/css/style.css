@@ -1,0 +1,1166 @@
+/* ==========================================================
+   ABC BANK SMARTASSIST
+   PROFESSIONAL CHAT INTERFACE CSS
+========================================================== */
+
+
+/* ==========================================================
+   GLOBAL RESET
+========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+body{
+
+    background:#eef3f8;
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header{
+
+    width:100%;
+
+    background:#003366;
+
+    color:white;
+
+    padding:20px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.15);
+
+}
+
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.bank-logo{
+
+    width:55px;
+
+    height:55px;
+
+    background:white;
+
+    color:#003366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+}
+
+
+.header h1{
+
+    font-size:30px;
+
+    margin-bottom:5px;
+
+}
+
+
+.header p{
+
+    font-size:15px;
+
+    opacity:.9;
+
+}
+
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:bold;
+
+}
+
+
+.status-dot{
+
+    width:12px;
+
+    height:12px;
+
+    background:#28a745;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+}
+
+
+/* ==========================================================
+   MAIN CONTAINER
+========================================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:35px auto;
+
+}
+
+
+/* ==========================================================
+   CHAT CARD
+========================================================== */
+
+.chat-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+
+        0 8px 25px rgba(0,0,0,.12);
+
+}
+
+
+/* ==========================================================
+   CHAT HEADER
+========================================================== */
+
+.chat-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding-bottom:20px;
+
+    border-bottom:
+
+        1px solid #ddd;
+
+    margin-bottom:20px;
+
+}
+
+
+.assistant-avatar{
+
+    width:60px;
+
+    height:60px;
+
+    background:#003366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+}
+
+
+.chat-header h2{
+
+    color:#003366;
+
+    margin-bottom:5px;
+
+}
+
+
+.chat-header p{
+
+    color:#666;
+
+}
+
+
+/* ==========================================================
+   CONVERSATION AREA
+========================================================== */
+
+.conversation{
+
+    height:500px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    background:#f5f9ff;
+
+    border-radius:15px;
+
+    border:1px solid #dce7f5;
+
+    margin-bottom:20px;
+
+}
+
+
+.message-row{
+
+    display:flex;
+
+    margin-bottom:20px;
+
+}
+
+
+.user-row{
+
+    justify-content:flex-end;
+
+}
+
+
+.bot-row{
+
+    justify-content:flex-start;
+
+}
+
+
+.message{
+
+    max-width:70%;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+        0 3px 10px rgba(0,0,0,.1);
+
+}
+
+
+.user-message{
+
+    background:#0066cc;
+
+    color:white;
+
+    border-radius:
+
+        18px 18px 5px 18px;
+
+}
+
+
+.bot-message{
+
+    background:white;
+
+    color:#333;
+
+    border-radius:
+
+        18px 18px 18px 5px;
+
+}
+
+
+.bot-avatar{
+
+    margin-right:10px;
+
+    font-size:25px;
+
+}
+
+
+.message-title{
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+
+.bot-response{
+
+    line-height:1.9;
+
+    font-size:16px;
+
+    white-space:normal;
+
+}
+
+.bot-response strong{
+
+    color:#003366;
+
+}
+
+.bot-response ul{
+
+    margin-left:20px;
+
+}
+
+.bot-response li{
+
+    margin:8px 0;
+
+}
+
+
+.message-time{
+
+    margin-top:10px;
+
+    font-size:11px;
+
+    opacity:.7;
+
+}
+/* ==========================================================
+   WELCOME CARD
+========================================================== */
+
+.welcome-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.welcome-icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.welcome-card h2{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+.welcome-card p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================================================
+   SERVICE GRID
+========================================================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(180px,1fr));
+
+    gap:15px;
+
+}
+
+.service-item{
+
+    background:#eef5ff;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+    color:#003366;
+
+    border:1px solid transparent;
+
+}
+
+.service-item:hover{
+
+    background:#003366;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+    border-color:#003366;
+
+}
+
+.service-item span{
+
+    font-size:15px;
+
+}
+
+
+/* ==========================================================
+   QUICK ACTIONS
+========================================================== */
+
+.quick-actions{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    gap:12px;
+
+    margin-top:25px;
+
+    margin-bottom:25px;
+
+}
+
+.quick-actions button{
+
+    background:white;
+
+    border:2px solid #d9e6f7;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+}
+
+.quick-actions button:hover{
+
+    background:#003366;
+
+    color:white;
+
+    border-color:#003366;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   INPUT AREA
+========================================================== */
+
+.input-container{
+
+    margin-top:10px;
+
+}
+
+textarea{
+
+    width:100%;
+
+    resize:none;
+
+    padding:18px;
+
+    font-size:16px;
+
+    border-radius:15px;
+
+    border:2px solid #d9e6f7;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#fbfdff;
+
+}
+
+textarea:focus{
+
+    border-color:#003366;
+
+    background:white;
+
+    box-shadow:
+
+        0 0 10px rgba(0,51,102,.15);
+
+}
+
+textarea::placeholder{
+
+    color:#888;
+
+}
+
+
+/* ==========================================================
+   ACTION BUTTONS
+========================================================== */
+
+.action-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.action-buttons button{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.send-btn{
+
+    background:#003366;
+
+    color:white;
+
+}
+
+.send-btn:hover{
+
+    background:#004b99;
+
+}
+
+.voice-btn{
+
+    background:#198754;
+
+    color:white;
+
+}
+
+.voice-btn:hover{
+
+    background:#157347;
+
+}
+
+.listen-btn{
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+.listen-btn:hover{
+
+    background:#e68a00;
+
+}
+
+.clear-btn{
+
+    background:#dc3545;
+
+    color:white;
+
+}
+
+.clear-btn:hover{
+
+    background:#bb2d3b;
+
+}
+/* ==========================================================
+   LOADING ANIMATION
+========================================================== */
+
+.loading-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:18px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:#eef5ff;
+
+    color:#003366;
+
+    font-weight:600;
+
+}
+
+.typing{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+}
+
+.typing span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#003366;
+
+    animation:typing 1.2s infinite;
+
+}
+
+.typing span:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.typing span:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes typing{
+
+    0%{
+
+        transform:translateY(0);
+
+        opacity:.3;
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+        opacity:.3;
+
+    }
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    margin-top:40px;
+
+    background:#003366;
+
+    color:white;
+
+    padding:30px;
+
+}
+
+.footer-content{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.footer-left h3{
+
+    margin-bottom:8px;
+
+}
+
+.footer-left p{
+
+    opacity:.9;
+
+}
+
+.footer-right{
+
+    text-align:right;
+
+}
+
+.footer-status{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:8px;
+
+}
+
+/* ==========================================================
+   CUSTOM SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef3f8;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#003366;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#004d99;
+
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVE
+========================================================== */
+
+@media (max-width:900px){
+
+.header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+.header-left{
+
+    flex-direction:column;
+
+}
+
+.chat-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.quick-actions{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.action-buttons{
+
+    flex-direction:column;
+
+}
+
+.message{
+
+    max-width:90%;
+
+}
+
+.footer-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.footer-right{
+
+    text-align:center;
+
+}
+
+}
+
+@media (max-width:600px){
+
+.container{
+
+    width:96%;
+
+}
+
+.quick-actions{
+
+    grid-template-columns:1fr;
+
+}
+
+.conversation{
+
+    height:420px;
+
+}
+
+.header h1{
+
+    font-size:24px;
+
+}
+
+.chat-card{
+
+    padding:18px;
+
+}
+
+textarea{
+
+    font-size:15px;
+
+}
+
+.action-buttons button{
+
+    width:100%;
+
+}
+
+}
+
+/* ==========================================================
+   SMALL ANIMATIONS
+========================================================== */
+
+.chat-card{
+
+    animation:fadeUp .5s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.message{
+
+    animation:messageAppear .35s ease;
+
+}
+
+@keyframes messageAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   BUTTON EFFECTS
+========================================================== */
+
+button{
+
+    transition:
+
+        transform .25s,
+
+        box-shadow .25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 8px 20px rgba(0,0,0,.18);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+/* ==========================================================
+   FEEDBACK
+========================================================== */
+
+.feedback-box{
+
+    margin-top:15px;
+
+    padding-top:12px;
+
+    border-top:1px solid #eeeeee;
+
+}
+
+.feedback-box small{
+
+    color:#666;
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+.feedback-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.feedback-btn{
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.like-btn{
+
+    background:#198754;
+
+    color:white;
+
+}
+
+.like-btn:hover{
+
+    background:#157347;
+
+}
+
+.dislike-btn{
+
+    background:#dc3545;
+
+    color:white;
+
+}
+
+.dislike-btn:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* ==========================================================
+   END OF FILE
+========================================================== */

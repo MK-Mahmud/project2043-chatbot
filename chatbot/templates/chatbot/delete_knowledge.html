@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Delete Knowledge</title>
+
+<link
+rel="stylesheet"
+href="{% static 'chatbot/css/knowledge_form.css' %}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>Delete Knowledge</h1>
+
+</div>
+
+<div class="container">
+
+<h2>
+
+Are you sure?
+
+</h2>
+
+<br>
+
+<p>
+
+<strong>Question:</strong>
+
+{{ knowledge.question_en }}
+
+</p>
+
+<br>
+
+<form method="POST">
+
+{% csrf_token %}
+
+<div class="buttons">
+
+<button
+type="submit"
+class="cancel">
+
+Delete
+
+</button>
+
+<a
+href="{% url 'knowledge_base' %}"
+class="save">
+
+Cancel
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

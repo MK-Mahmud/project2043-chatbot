@@ -1,0 +1,78 @@
+text,sentiment
+Thank you,Positive
+Thanks,Positive
+Thank you very much,Positive
+I appreciate your help,Positive
+Excellent service,Positive
+Very good,Positive
+Amazing service,Positive
+Awesome,Positive
+Perfect,Positive
+Wonderful,Positive
+Fantastic,Positive
+Great work,Positive
+I am happy,Positive
+I love this bank,Positive
+Best bank ever,Positive
+Nice service,Positive
+Well done,Positive
+Helpful staff,Positive
+Satisfied,Positive
+Everything is fine,Positive
+I am grateful,Positive
+Thank you so much,Positive
+This is excellent,Positive
+Good customer service,Positive
+Very impressive,Positive
+
+I am angry,Negative
+This is terrible,Negative
+Bad service,Negative
+Very bad,Negative
+I hate this bank,Negative
+Awful experience,Negative
+Poor customer service,Negative
+I am disappointed,Negative
+This is frustrating,Negative
+I have a complaint,Negative
+The ATM failed,Negative
+Transaction failed,Negative
+My card is blocked,Negative
+The system is slow,Negative
+Very slow service,Negative
+I cannot login,Negative
+There is an error,Negative
+I am unhappy,Negative
+Worst service,Negative
+I am frustrated,Negative
+Nothing works,Negative
+This is unacceptable,Negative
+Delay everywhere,Negative
+Very disappointed,Negative
+Terrible support,Negative
+
+Hello,Neutral
+Hi,Neutral
+Good morning,Neutral
+I need a loan,Neutral
+Open an account,Neutral
+Check my balance,Neutral
+Transfer money,Neutral
+Reset my ATM PIN,Neutral
+Where is your branch,Neutral
+Mobile banking,Neutral
+Internet banking,Neutral
+Debit card,Neutral
+Loan application,Neutral
+How do I register,Neutral
+Can you help me,Neutral
+I have a question,Neutral
+Account opening,Neutral
+Balance enquiry,Neutral
+ATM services,Neutral
+Bank information,Neutral
+Customer support,Neutral
+Branch location,Neutral
+Good afternoon,Neutral
+Good evening,Neutral
+Tell me about your services,Neutral

@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>ABC Bank Admin Panel</title>
+
+    <link rel="stylesheet"
+          href="{% static 'chatbot/css/admin_panel.css' %}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>🏦 ABC Bank Admin Control Panel</h1>
+
+    <p>AI-Powered Customer Inquiry Management System</p>
+
+</div>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+
+<h2>{{ total_chats }}</h2>
+
+<p>Total Chats</p>
+
+</div>
+
+<div class="card">
+
+<h2>{{ total_feedback }}</h2>
+
+<p>User Feedback</p>
+
+</div>
+
+<div class="card">
+
+<h2>{{ unanswered }}</h2>
+
+<p>Unanswered Questions</p>
+
+</div>
+
+<div class="card">
+
+<h2>{{ knowledge }}</h2>
+
+<p>Knowledge Base</p>
+
+</div>
+
+</div>
+
+<div class="menu">
+
+<a href="/dashboard/" class="menu-btn">
+
+📊 Analytics Dashboard
+
+</a>
+
+<a href="/knowledge/" class="menu-btn">
+
+📚 Knowledge Base
+
+</a>
+
+<a href="/admin/" class="menu-btn">
+
+⚙ Django Admin
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Add Knowledge</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'chatbot/css/knowledge_form.css' %}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>➕ Add Knowledge</h1>
+
+    <p>ABC Bank AI Knowledge Management</p>
+
+</div>
+
+<div class="container">
+
+<form method="POST">
+
+{% csrf_token %}
+
+<div class="form-group">
+
+<label>
+
+Intent
+
+</label>
+
+<select
+name="intent"
+required>
+
+<option value="">
+
+Select Intent
+
+</option>
+
+{% for intent in intents %}
+
+<option value="{{ intent.id }}">
+
+{{ intent.intent_name }}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+English Question
+
+</label>
+
+<textarea
+
+name="question_en"
+
+rows="3"
+
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Hausa Question
+
+</label>
+
+<textarea
+
+name="question_ha"
+
+rows="3"
+
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+English Answer
+
+</label>
+
+<textarea
+
+name="answer_en"
+
+rows="5"
+
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Hausa Answer
+
+</label>
+
+<textarea
+
+name="answer_ha"
+
+rows="5"
+
+required></textarea>
+
+</div>
+
+<div class="buttons">
+
+<button
+type="submit"
+class="save">
+
+💾 Save Knowledge
+
+</button>
+
+<a
+href="{% url 'knowledge_base' %}"
+class="cancel">
+
+Cancel
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

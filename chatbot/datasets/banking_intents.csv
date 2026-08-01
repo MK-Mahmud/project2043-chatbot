@@ -1,0 +1,612 @@
+id,text,intent,language
+1,Hello,GREETING,English
+2,Hi,GREETING,English
+3,Hey,GREETING,English
+4,Good morning,GREETING,English
+5,Good afternoon,GREETING,English
+6,Good evening,GREETING,English
+7,Good day,GREETING,English
+8,Greetings,GREETING,English
+9,Hello there,GREETING,English
+10,Hi there,GREETING,English
+11,Welcome,GREETING,English
+12,Nice to meet you,GREETING,English
+13,How are you?,GREETING,English
+14,How is your day?,GREETING,English
+15,Good to see you,GREETING,English
+16,Happy to be here,GREETING,English
+17,Good to talk to you,GREETING,English
+18,Good day everyone,GREETING,English
+19,Morning,GREETING,English
+20,Evening,GREETING,English
+21,Afternoon,GREETING,English
+22,Hello friend,GREETING,English
+23,Hi bank,GREETING,English
+24,Hello ABC Bank,GREETING,English
+25,Greetings everyone,GREETING,English
+26,Sannu,GREETING,Hausa
+27,Barka,GREETING,Hausa
+28,Barka da safiya,GREETING,Hausa
+29,Barka da rana,GREETING,Hausa
+30,Barka da yamma,GREETING,Hausa
+31,Ina kwana,GREETING,Hausa
+32,Ina wuni,GREETING,Hausa
+33,Sannu da aiki,GREETING,Hausa
+34,Barka da zuwa,GREETING,Hausa
+35,Sannu kowa,GREETING,Hausa
+36,Lafiya lau?,GREETING,Hausa
+37,Yaya lafiya?,GREETING,Hausa
+38,Barka da warhaka,GREETING,Hausa
+39,Sannu abokina,GREETING,Hausa
+40,Barka da sake gani,GREETING,Hausa
+41,Ina yini?,GREETING,Hausa
+42,Barka da wannan rana,GREETING,Hausa
+43,Sannu dai,GREETING,Hausa
+44,Yaya kake?,GREETING,Hausa
+45,Yaya kuke?,GREETING,Hausa
+46,Assalamu alaikum,GREETING,Hausa
+47,Wa alaikum salam,GREETING,Hausa
+48,Barkanmu da wannan lokaci,GREETING,Hausa
+49,Sannu masu aiki,GREETING,Hausa
+50,Barka da zuwa banki,GREETING,Hausa
+
+51,I want to open an account,ACCOUNT_OPENING,English
+52,How do I open a bank account?,ACCOUNT_OPENING,English
+53,Open an account for me,ACCOUNT_OPENING,English
+54,I need a savings account,ACCOUNT_OPENING,English
+55,I want a current account,ACCOUNT_OPENING,English
+56,Can I open an account online?,ACCOUNT_OPENING,English
+57,What documents are required to open an account?,ACCOUNT_OPENING,English
+58,What do I need to open an account?,ACCOUNT_OPENING,English
+59,How much does it cost to open an account?,ACCOUNT_OPENING,English
+60,I want to become your customer,ACCOUNT_OPENING,English
+61,Can I register for an account?,ACCOUNT_OPENING,English
+62,I need a student account,ACCOUNT_OPENING,English
+63,How can I create an account?,ACCOUNT_OPENING,English
+64,Help me open a bank account,ACCOUNT_OPENING,English
+65,I would like to create a new account,ACCOUNT_OPENING,English
+66,I need to register an account,ACCOUNT_OPENING,English
+67,Can you help me open an account?,ACCOUNT_OPENING,English
+68,I want to join your bank,ACCOUNT_OPENING,English
+69,Where can I open an account?,ACCOUNT_OPENING,English
+70,How long does account opening take?,ACCOUNT_OPENING,English
+71,Can foreigners open an account?,ACCOUNT_OPENING,English
+72,Can students open an account?,ACCOUNT_OPENING,English
+73,Do I need an ID to open an account?,ACCOUNT_OPENING,English
+74,I want to start banking with you,ACCOUNT_OPENING,English
+75,Please help me create an account,ACCOUNT_OPENING,English
+76,Ina son bude account,ACCOUNT_OPENING,Hausa
+77,Yaya zan bude account?,ACCOUNT_OPENING,Hausa
+78,Zan iya bude account?,ACCOUNT_OPENING,Hausa
+79,Ina bukatar account na ajiya,ACCOUNT_OPENING,Hausa
+80,Ina son account na current,ACCOUNT_OPENING,Hausa
+81,Wadanne takardu ake bukata?,ACCOUNT_OPENING,Hausa
+82,Me ake bukata domin bude account?,ACCOUNT_OPENING,Hausa
+83,Nawa ake bukata wajen bude account?,ACCOUNT_OPENING,Hausa
+84,Ina son zama kwastoma,ACCOUNT_OPENING,Hausa
+85,Za ku iya bude min account?,ACCOUNT_OPENING,Hausa
+86,Taimaka min bude account,ACCOUNT_OPENING,Hausa
+87,Ina son bude sabon account,ACCOUNT_OPENING,Hausa
+88,Yaya zan kirkiri account?,ACCOUNT_OPENING,Hausa
+89,Ina bukatar account na dalibai,ACCOUNT_OPENING,Hausa
+90,Zan iya bude account ta intanet?,ACCOUNT_OPENING,Hausa
+91,A ina zan bude account?,ACCOUNT_OPENING,Hausa
+92,Ina son fara amfani da bankinku,ACCOUNT_OPENING,Hausa
+93,Ta yaya zan zama kwastoma?,ACCOUNT_OPENING,Hausa
+94,Shin ana bukatar katin shaida?,ACCOUNT_OPENING,Hausa
+95,Account nake son budewa,ACCOUNT_OPENING,Hausa
+96,Don Allah ku bude min account,ACCOUNT_OPENING,Hausa
+97,Ina son bude account na banki,ACCOUNT_OPENING,Hausa
+98,Taimaka min in bude account,ACCOUNT_OPENING,Hausa
+99,Yaya ake bude account?,ACCOUNT_OPENING,Hausa
+100,Ina son yin rajistar account,ACCOUNT_OPENING,Hausa
+
+101,I need a loan,LOAN_INQUIRY,English
+102,I want a loan,LOAN_INQUIRY,English
+103,How can I get a loan?,LOAN_INQUIRY,English
+104,I want to apply for a loan,LOAN_INQUIRY,English
+105,Loan application,LOAN_INQUIRY,English
+106,I need financial assistance,LOAN_INQUIRY,English
+107,I want to borrow money,LOAN_INQUIRY,English
+108,Can I borrow money from the bank?,LOAN_INQUIRY,English
+109,I need a personal loan,LOAN_INQUIRY,English
+110,I want a business loan,LOAN_INQUIRY,English
+111,Do you offer loans?,LOAN_INQUIRY,English
+112,Loan information,LOAN_INQUIRY,English
+113,Tell me about your loan services,LOAN_INQUIRY,English
+114,How do I qualify for a loan?,LOAN_INQUIRY,English
+115,What documents are needed for a loan?,LOAN_INQUIRY,English
+116,Can I apply for a loan online?,LOAN_INQUIRY,English
+117,How long does loan approval take?,LOAN_INQUIRY,English
+118,I need financing,LOAN_INQUIRY,English
+119,Help me get a loan,LOAN_INQUIRY,English
+120,Education loan information,LOAN_INQUIRY,English
+121,Can I get a student loan?,LOAN_INQUIRY,English
+122,What is the interest rate on loans?,LOAN_INQUIRY,English
+123,I need credit from the bank,LOAN_INQUIRY,English
+124,I want to finance my business,LOAN_INQUIRY,English
+125,I need money for my business,LOAN_INQUIRY,English
+126,Ina bukatar rance,LOAN_INQUIRY,Hausa
+127,Ina son rance,LOAN_INQUIRY,Hausa
+128,Yaya zan samu rance?,LOAN_INQUIRY,Hausa
+129,Zan iya neman rance?,LOAN_INQUIRY,Hausa
+130,Taimaka min samun rance,LOAN_INQUIRY,Hausa
+131,Loan nake bukata,LOAN_INQUIRY,Hausa
+132,Ina son neman loan,LOAN_INQUIRY,Hausa
+133,Yaya ake neman loan?,LOAN_INQUIRY,Hausa
+134,Ina bukatar loan na kasuwanci,LOAN_INQUIRY,Hausa
+135,Ina bukatar personal loan,LOAN_INQUIRY,Hausa
+136,Bankinku yana bada rance?,LOAN_INQUIRY,Hausa
+137,Ina son aro kudi,LOAN_INQUIRY,Hausa
+138,Ta yaya zan aro kudi?,LOAN_INQUIRY,Hausa
+139,Wadanne takardu ake bukata domin rance?,LOAN_INQUIRY,Hausa
+140,Yaya ake amincewa da rance?,LOAN_INQUIRY,Hausa
+141,Zan iya neman loan ta intanet?,LOAN_INQUIRY,Hausa
+142,Rancen dalibai nake nema,LOAN_INQUIRY,Hausa
+143,Ina son karin bayani game da loan,LOAN_INQUIRY,Hausa
+144,Taimaka min neman loan,LOAN_INQUIRY,Hausa
+145,Ina bukatar tallafin kudi,LOAN_INQUIRY,Hausa
+146,Na zo neman rance,LOAN_INQUIRY,Hausa
+147,Loan nawa zan iya samu?,LOAN_INQUIRY,Hausa
+148,Yaya kudin ruwa na loan yake?,LOAN_INQUIRY,Hausa
+149,Ina son kudin jari don kasuwanci,LOAN_INQUIRY,Hausa
+150,Don Allah ina bukatar rance,LOAN_INQUIRY,Hausa
+
+151,I want to transfer money,MONEY_TRANSFER,English
+152,How do I transfer money?,MONEY_TRANSFER,English
+153,Transfer money to another account,MONEY_TRANSFER,English
+154,I need to send money,MONEY_TRANSFER,English
+155,Can I transfer funds online?,MONEY_TRANSFER,English
+156,I want to make a bank transfer,MONEY_TRANSFER,English
+157,Help me transfer money,MONEY_TRANSFER,English
+158,How can I send money?,MONEY_TRANSFER,English
+159,I want to transfer money to my friend,MONEY_TRANSFER,English
+160,I need to transfer money to another bank,MONEY_TRANSFER,English
+161,Can I transfer money using the mobile app?,MONEY_TRANSFER,English
+162,What is the transfer limit?,MONEY_TRANSFER,English
+163,How long does a transfer take?,MONEY_TRANSFER,English
+164,Is there a transfer fee?,MONEY_TRANSFER,English
+165,I made a wrong transfer,MONEY_TRANSFER,English
+166,Can I cancel a transfer?,MONEY_TRANSFER,English
+167,Transfer between my accounts,MONEY_TRANSFER,English
+168,I want to send money internationally,MONEY_TRANSFER,English
+169,How do I transfer money abroad?,MONEY_TRANSFER,English
+170,I need to transfer funds urgently,MONEY_TRANSFER,English
+171,Bank transfer,MONEY_TRANSFER,English
+172,Electronic transfer,MONEY_TRANSFER,English
+173,Wire transfer information,MONEY_TRANSFER,English
+174,Transfer funds now,MONEY_TRANSFER,English
+175,I need help with a transfer,MONEY_TRANSFER,English
+176,Ina son tura kudi,MONEY_TRANSFER,Hausa
+177,Yaya zan tura kudi?,MONEY_TRANSFER,Hausa
+178,Ina bukatar tura kudi,MONEY_TRANSFER,Hausa
+179,Tura kudi zuwa wani account,MONEY_TRANSFER,Hausa
+180,Zan iya tura kudi ta wayata?,MONEY_TRANSFER,Hausa
+181,Ina son yin transfer,MONEY_TRANSFER,Hausa
+182,Taimaka min yin transfer,MONEY_TRANSFER,Hausa
+183,Yaya ake yin transfer?,MONEY_TRANSFER,Hausa
+184,Ina son aika kudi,MONEY_TRANSFER,Hausa
+185,Transfer zuwa wani banki,MONEY_TRANSFER,Hausa
+186,Nawa iyakar transfer?,MONEY_TRANSFER,Hausa
+187,Transfer zai dauki lokaci nawa?,MONEY_TRANSFER,Hausa
+188,Akwai kudin transfer?,MONEY_TRANSFER,Hausa
+189,Na yi transfer ba daidai ba,MONEY_TRANSFER,Hausa
+190,Zan iya soke transfer?,MONEY_TRANSFER,Hausa
+191,Ina son transfer tsakanin account dina,MONEY_TRANSFER,Hausa
+192,Ina son aika kudi kasashen waje,MONEY_TRANSFER,Hausa
+193,Yaya zan aika kudi zuwa wata kasa?,MONEY_TRANSFER,Hausa
+194,Ina bukatar gaggawar transfer,MONEY_TRANSFER,Hausa
+195,Transfer nake son yi,MONEY_TRANSFER,Hausa
+196,Tura min kudi,MONEY_TRANSFER,Hausa
+197,Yaya ake aika kudi?,MONEY_TRANSFER,Hausa
+198,Ina bukatar taimako wajen transfer,MONEY_TRANSFER,Hausa
+199,Transfer na banki,MONEY_TRANSFER,Hausa
+200,Don Allah ina son yin transfer,MONEY_TRANSFER,Hausa
+
+201,I want to check my account balance,ACCOUNT_BALANCE,English
+202,Check my balance,ACCOUNT_BALANCE,English
+203,What is my account balance?,ACCOUNT_BALANCE,English
+204,How much money do I have?,ACCOUNT_BALANCE,English
+205,Show me my balance,ACCOUNT_BALANCE,English
+206,I need my balance,ACCOUNT_BALANCE,English
+207,Can I know my balance?,ACCOUNT_BALANCE,English
+208,Current account balance,ACCOUNT_BALANCE,English
+209,Balance enquiry,ACCOUNT_BALANCE,English
+210,How can I check my balance?,ACCOUNT_BALANCE,English
+211,Tell me my account balance,ACCOUNT_BALANCE,English
+212,Account balance please,ACCOUNT_BALANCE,English
+213,View my balance,ACCOUNT_BALANCE,English
+214,I want to see my balance,ACCOUNT_BALANCE,English
+215,How much is in my account?,ACCOUNT_BALANCE,English
+216,Can you show my available balance?,ACCOUNT_BALANCE,English
+217,How much money is left in my account?,ACCOUNT_BALANCE,English
+218,I need to know my remaining balance,ACCOUNT_BALANCE,English
+219,Display my account balance,ACCOUNT_BALANCE,English
+220,What's left in my account?,ACCOUNT_BALANCE,English
+221,Can I view my account balance online?,ACCOUNT_BALANCE,English
+222,Show my current balance,ACCOUNT_BALANCE,English
+223,I would like to know my account balance,ACCOUNT_BALANCE,English
+224,Please check my account balance,ACCOUNT_BALANCE,English
+225,I need my available balance,ACCOUNT_BALANCE,English
+226,Ina son duba balance dina,ACCOUNT_BALANCE,Hausa
+227,Nawa ne a account dina?,ACCOUNT_BALANCE,Hausa
+228,Balance dina nawa ne?,ACCOUNT_BALANCE,Hausa
+229,Duba balance dina,ACCOUNT_BALANCE,Hausa
+230,Ina bukatar balance dina,ACCOUNT_BALANCE,Hausa
+231,Yaya zan duba balance?,ACCOUNT_BALANCE,Hausa
+232,Nuna min balance dina,ACCOUNT_BALANCE,Hausa
+233,Ina son sanin balance dina,ACCOUNT_BALANCE,Hausa
+234,Account balance dina nawa ne?,ACCOUNT_BALANCE,Hausa
+235,Balance na yanzu,ACCOUNT_BALANCE,Hausa
+236,Nawa nake da shi a account?,ACCOUNT_BALANCE,Hausa
+237,Ina son ganin balance dina,ACCOUNT_BALANCE,Hausa
+238,Don Allah nuna min balance,ACCOUNT_BALANCE,Hausa
+239,Ina bukatar sanin balance,ACCOUNT_BALANCE,Hausa
+240,Ka nuna min balance dina,ACCOUNT_BALANCE,Hausa
+241,Nawa ya rage a account dina?,ACCOUNT_BALANCE,Hausa
+242,Ina son duba kudin account dina,ACCOUNT_BALANCE,Hausa
+243,Balance dina na yanzu,ACCOUNT_BALANCE,Hausa
+244,Zan iya ganin balance ta intanet?,ACCOUNT_BALANCE,Hausa
+245,Duba account balance dina,ACCOUNT_BALANCE,Hausa
+246,Nawa nake da shi yanzu?,ACCOUNT_BALANCE,Hausa
+247,Ina son ganin kudina,ACCOUNT_BALANCE,Hausa
+248,Balance dina don Allah,ACCOUNT_BALANCE,Hausa
+249,Ina bukatar account balance,ACCOUNT_BALANCE,Hausa
+250,Don Allah duba balance dina,ACCOUNT_BALANCE,Hausa
+
+251,I forgot my ATM PIN,ATM_PIN_RESET,English
+252,I need to reset my ATM PIN,ATM_PIN_RESET,English
+253,How do I change my ATM PIN?,ATM_PIN_RESET,English
+254,My ATM PIN is blocked,ATM_PIN_RESET,English
+255,I entered the wrong PIN,ATM_PIN_RESET,English
+256,Help me reset my PIN,ATM_PIN_RESET,English
+257,I want a new ATM PIN,ATM_PIN_RESET,English
+258,Can I change my debit card PIN?,ATM_PIN_RESET,English
+259,How can I recover my ATM PIN?,ATM_PIN_RESET,English
+260,I forgot my card PIN,ATM_PIN_RESET,English
+261,My PIN is not working,ATM_PIN_RESET,English
+262,I cannot remember my PIN,ATM_PIN_RESET,English
+263,I need a PIN reset,ATM_PIN_RESET,English
+264,My ATM card PIN failed,ATM_PIN_RESET,English
+265,How do I create a new PIN?,ATM_PIN_RESET,English
+266,I locked my ATM PIN,ATM_PIN_RESET,English
+267,Can I reset my PIN online?,ATM_PIN_RESET,English
+268,I need help changing my PIN,ATM_PIN_RESET,English
+269,Reset my debit card PIN,ATM_PIN_RESET,English
+270,My ATM PIN has been locked,ATM_PIN_RESET,English
+271,I want to update my ATM PIN,ATM_PIN_RESET,English
+272,My card PIN is incorrect,ATM_PIN_RESET,English
+273,How do I unlock my PIN?,ATM_PIN_RESET,English
+274,I need to unlock my ATM PIN,ATM_PIN_RESET,English
+275,Please help me recover my PIN,ATM_PIN_RESET,English
+276,Na manta ATM PIN dina,ATM_PIN_RESET,Hausa
+277,Ina son sake saita ATM PIN dina,ATM_PIN_RESET,Hausa
+278,Yaya zan canja ATM PIN?,ATM_PIN_RESET,Hausa
+279,ATM PIN dina ya kulle,ATM_PIN_RESET,Hausa
+280,Na shigar da PIN ba daidai ba,ATM_PIN_RESET,Hausa
+281,Taimaka min sake saita PIN,ATM_PIN_RESET,Hausa
+282,Ina son sabon ATM PIN,ATM_PIN_RESET,Hausa
+283,Zan iya canja PIN na kati?,ATM_PIN_RESET,Hausa
+284,Yaya zan dawo da ATM PIN dina?,ATM_PIN_RESET,Hausa
+285,Na manta PIN na kati,ATM_PIN_RESET,Hausa
+286,PIN dina baya aiki,ATM_PIN_RESET,Hausa
+287,Ban tuna PIN dina ba,ATM_PIN_RESET,Hausa
+288,Ina bukatar a sake saita PIN,ATM_PIN_RESET,Hausa
+289,ATM PIN dina ya gaza,ATM_PIN_RESET,Hausa
+290,Yaya zan kirkiri sabon PIN?,ATM_PIN_RESET,Hausa
+291,Na kulle ATM PIN dina,ATM_PIN_RESET,Hausa
+292,Zan iya sake saita PIN ta intanet?,ATM_PIN_RESET,Hausa
+293,Ina bukatar taimako wajen canja PIN,ATM_PIN_RESET,Hausa
+294,Sake saita PIN na kati,ATM_PIN_RESET,Hausa
+295,ATM PIN dina ya tsaya,ATM_PIN_RESET,Hausa
+296,Ina son sabunta ATM PIN dina,ATM_PIN_RESET,Hausa
+297,PIN na kati ba daidai bane,ATM_PIN_RESET,Hausa
+298,Yaya zan bude PIN dina?,ATM_PIN_RESET,Hausa
+299,Ina bukatar bude ATM PIN dina,ATM_PIN_RESET,Hausa
+300,Don Allah ku taimaka min dawo da PIN dina,ATM_PIN_RESET,Hausa
+
+301,I need a debit card,DEBIT_CARD,English
+302,I want a debit card,DEBIT_CARD,English
+303,How do I get a debit card?,DEBIT_CARD,English
+304,Apply for a debit card,DEBIT_CARD,English
+305,I lost my debit card,DEBIT_CARD,English
+306,My debit card was stolen,DEBIT_CARD,English
+307,I need to replace my debit card,DEBIT_CARD,English
+308,How can I replace my card?,DEBIT_CARD,English
+309,My debit card is damaged,DEBIT_CARD,English
+310,My card has expired,DEBIT_CARD,English
+311,I want to activate my debit card,DEBIT_CARD,English
+312,How do I activate my card?,DEBIT_CARD,English
+313,I cannot use my debit card,DEBIT_CARD,English
+314,My debit card is blocked,DEBIT_CARD,English
+315,Help me unblock my debit card,DEBIT_CARD,English
+316,Where can I collect my debit card?,DEBIT_CARD,English
+317,How long does it take to get a debit card?,DEBIT_CARD,English
+318,Can I request a new debit card online?,DEBIT_CARD,English
+319,I need a replacement card,DEBIT_CARD,English
+320,I want a new ATM card,DEBIT_CARD,English
+321,My card is not working,DEBIT_CARD,English
+322,Can I renew my debit card?,DEBIT_CARD,English
+323,I want to change my debit card,DEBIT_CARD,English
+324,Please issue me a debit card,DEBIT_CARD,English
+325,I need help with my debit card,DEBIT_CARD,English
+326,Ina bukatar debit card,DEBIT_CARD,Hausa
+327,Ina son debit card,DEBIT_CARD,Hausa
+328,Yaya zan samu debit card?,DEBIT_CARD,Hausa
+329,Ina son neman debit card,DEBIT_CARD,Hausa
+330,Na rasa debit card dina,DEBIT_CARD,Hausa
+331,An sace debit card dina,DEBIT_CARD,Hausa
+332,Ina bukatar sabon debit card,DEBIT_CARD,Hausa
+333,Yaya zan maye gurbin debit card?,DEBIT_CARD,Hausa
+334,Debit card dina ya lalace,DEBIT_CARD,Hausa
+335,Debit card dina ya kare,DEBIT_CARD,Hausa
+336,Ina son kunna debit card dina,DEBIT_CARD,Hausa
+337,Yaya zan kunna card dina?,DEBIT_CARD,Hausa
+338,Debit card dina baya aiki,DEBIT_CARD,Hausa
+339,An toshe debit card dina,DEBIT_CARD,Hausa
+340,Taimaka min bude debit card dina,DEBIT_CARD,Hausa
+341,A ina zan karbi debit card dina?,DEBIT_CARD,Hausa
+342,Yaushe zan samu debit card dina?,DEBIT_CARD,Hausa
+343,Zan iya neman debit card ta intanet?,DEBIT_CARD,Hausa
+344,Ina bukatar maye gurbin card dina,DEBIT_CARD,Hausa
+345,Ina son sabon ATM card,DEBIT_CARD,Hausa
+346,Card dina baya aiki,DEBIT_CARD,Hausa
+347,Zan iya sabunta debit card dina?,DEBIT_CARD,Hausa
+348,Ina son canja debit card dina,DEBIT_CARD,Hausa
+349,Don Allah ku bani debit card,DEBIT_CARD,Hausa
+350,Ina bukatar taimako game da debit card,DEBIT_CARD,Hausa
+
+351,I want to use internet banking,INTERNET_BANKING,English
+352,How do I register for internet banking?,INTERNET_BANKING,English
+353,I cannot log into internet banking,INTERNET_BANKING,English
+354,I forgot my internet banking password,INTERNET_BANKING,English
+355,How do I reset my internet banking password?,INTERNET_BANKING,English
+356,I want to activate internet banking,INTERNET_BANKING,English
+357,Help me access internet banking,INTERNET_BANKING,English
+358,How can I use online banking?,INTERNET_BANKING,English
+359,I need online banking services,INTERNET_BANKING,English
+360,I want to sign up for internet banking,INTERNET_BANKING,English
+361,Internet banking registration,INTERNET_BANKING,English
+362,My online banking account is locked,INTERNET_BANKING,English
+363,I cannot access my online banking account,INTERNET_BANKING,English
+364,How do I unlock my internet banking account?,INTERNET_BANKING,English
+365,Can I register for internet banking online?,INTERNET_BANKING,English
+366,I need help with online banking,INTERNET_BANKING,English
+367,My internet banking login failed,INTERNET_BANKING,English
+368,I want to change my internet banking password,INTERNET_BANKING,English
+369,How secure is internet banking?,INTERNET_BANKING,English
+370,Can I transfer money using internet banking?,INTERNET_BANKING,English
+371,How do I check my balance online?,INTERNET_BANKING,English
+372,I want to pay bills through internet banking,INTERNET_BANKING,English
+373,Online banking information,INTERNET_BANKING,English
+374,Internet banking support,INTERNET_BANKING,English
+375,Please help me with internet banking,INTERNET_BANKING,English
+376,Ina son amfani da internet banking,INTERNET_BANKING,Hausa
+377,Yaya zan yi rajistar internet banking?,INTERNET_BANKING,Hausa
+378,Ba zan iya shiga internet banking ba,INTERNET_BANKING,Hausa
+379,Na manta password na internet banking,INTERNET_BANKING,Hausa
+380,Yaya zan sake saita password?,INTERNET_BANKING,Hausa
+381,Ina son kunna internet banking,INTERNET_BANKING,Hausa
+382,Taimaka min shiga internet banking,INTERNET_BANKING,Hausa
+383,Yaya ake amfani da online banking?,INTERNET_BANKING,Hausa
+384,Ina bukatar online banking,INTERNET_BANKING,Hausa
+385,Ina son yin rajistar internet banking,INTERNET_BANKING,Hausa
+386,An kulle account dina na internet banking,INTERNET_BANKING,Hausa
+387,Ba zan iya shiga account dina ba,INTERNET_BANKING,Hausa
+388,Yaya zan bude account dina?,INTERNET_BANKING,Hausa
+389,Zan iya yin rajista ta intanet?,INTERNET_BANKING,Hausa
+390,Ina bukatar taimako game da internet banking,INTERNET_BANKING,Hausa
+391,Login dina ya kasa,INTERNET_BANKING,Hausa
+392,Ina son canja password dina,INTERNET_BANKING,Hausa
+393,Internet banking yana da tsaro?,INTERNET_BANKING,Hausa
+394,Zan iya tura kudi ta internet banking?,INTERNET_BANKING,Hausa
+395,Yaya zan duba balance ta internet?,INTERNET_BANKING,Hausa
+396,Ina son biyan kudade ta internet banking,INTERNET_BANKING,Hausa
+397,Bayani game da internet banking,INTERNET_BANKING,Hausa
+398,Taimakon internet banking nake bukata,INTERNET_BANKING,Hausa
+399,Don Allah ku taimake ni da internet banking,INTERNET_BANKING,Hausa
+400,Ina son shiga online banking,INTERNET_BANKING,Hausa
+
+401,I want to use mobile banking,MOBILE_BANKING,English
+402,How do I register for mobile banking?,MOBILE_BANKING,English
+403,I cannot log into the mobile app,MOBILE_BANKING,English
+404,I forgot my mobile banking password,MOBILE_BANKING,English
+405,How do I reset my mobile banking password?,MOBILE_BANKING,English
+406,I want to activate mobile banking,MOBILE_BANKING,English
+407,Help me access the mobile banking app,MOBILE_BANKING,English
+408,How can I use the mobile banking app?,MOBILE_BANKING,English
+409,I need mobile banking services,MOBILE_BANKING,English
+410,I want to download the mobile banking app,MOBILE_BANKING,English
+411,Where can I download your banking app?,MOBILE_BANKING,English
+412,The mobile app is not working,MOBILE_BANKING,English
+413,The banking app keeps crashing,MOBILE_BANKING,English
+414,I cannot sign in to the banking app,MOBILE_BANKING,English
+415,Can I transfer money with the mobile app?,MOBILE_BANKING,English
+416,Can I check my balance using the app?,MOBILE_BANKING,English
+417,How do I update the mobile banking app?,MOBILE_BANKING,English
+418,I need help using the banking app,MOBILE_BANKING,English
+419,My mobile banking account is locked,MOBILE_BANKING,English
+420,I want to change my mobile banking PIN,MOBILE_BANKING,English
+421,Does your bank have a mobile app?,MOBILE_BANKING,English
+422,How secure is your banking app?,MOBILE_BANKING,English
+423,Mobile banking information,MOBILE_BANKING,English
+424,Mobile banking support,MOBILE_BANKING,English
+425,Please help me with the banking app,MOBILE_BANKING,English
+426,Ina son amfani da mobile banking,MOBILE_BANKING,Hausa
+427,Yaya zan yi rajistar mobile banking?,MOBILE_BANKING,Hausa
+428,Ba zan iya shiga mobile banking ba,MOBILE_BANKING,Hausa
+429,Na manta password na mobile banking,MOBILE_BANKING,Hausa
+430,Yaya zan sake saita password na mobile banking?,MOBILE_BANKING,Hausa
+431,Ina son kunna mobile banking,MOBILE_BANKING,Hausa
+432,Taimaka min shiga banking app,MOBILE_BANKING,Hausa
+433,Yaya ake amfani da banking app?,MOBILE_BANKING,Hausa
+434,Ina bukatar mobile banking,MOBILE_BANKING,Hausa
+435,Ina son sauke banking app,MOBILE_BANKING,Hausa
+436,A ina zan sauke banking app?,MOBILE_BANKING,Hausa
+437,Banking app dina baya aiki,MOBILE_BANKING,Hausa
+438,App din banki yana rufewa,MOBILE_BANKING,Hausa
+439,Ba zan iya shiga app din banki ba,MOBILE_BANKING,Hausa
+440,Zan iya tura kudi da app din banki?,MOBILE_BANKING,Hausa
+441,Zan iya duba balance da app?,MOBILE_BANKING,Hausa
+442,Yaya zan sabunta banking app?,MOBILE_BANKING,Hausa
+443,Ina bukatar taimako wajen amfani da app,MOBILE_BANKING,Hausa
+444,An kulle mobile banking dina,MOBILE_BANKING,Hausa
+445,Ina son canja PIN na mobile banking,MOBILE_BANKING,Hausa
+446,Bankinku yana da mobile app?,MOBILE_BANKING,Hausa
+447,Mobile banking yana da tsaro?,MOBILE_BANKING,Hausa
+448,Bayani game da mobile banking,MOBILE_BANKING,Hausa
+449,Taimakon mobile banking nake bukata,MOBILE_BANKING,Hausa
+450,Don Allah ku taimake ni da mobile banking,MOBILE_BANKING,Hausa
+
+451,Where is your nearest branch?,BRANCH_LOCATION,English
+452,Locate the nearest branch,BRANCH_LOCATION,English
+453,I need your branch address,BRANCH_LOCATION,English
+454,Where is your bank located?,BRANCH_LOCATION,English
+455,Show me the nearest ATM,BRANCH_LOCATION,English
+456,Where can I find an ATM?,BRANCH_LOCATION,English
+457,What are your banking hours?,BRANCH_LOCATION,English
+458,When do you open?,BRANCH_LOCATION,English
+459,When do you close?,BRANCH_LOCATION,English
+460,What time does the bank open?,BRANCH_LOCATION,English
+461,What time does the bank close?,BRANCH_LOCATION,English
+462,Is your branch open today?,BRANCH_LOCATION,English
+463,Which branch is closest to me?,BRANCH_LOCATION,English
+464,How do I get to your branch?,BRANCH_LOCATION,English
+465,I need directions to your branch,BRANCH_LOCATION,English
+466,Do you have a branch in Abuja?,BRANCH_LOCATION,English
+467,Do you have a branch in Lagos?,BRANCH_LOCATION,English
+468,Is there an ATM near me?,BRANCH_LOCATION,English
+469,Find the closest ATM,BRANCH_LOCATION,English
+470,Where is your head office?,BRANCH_LOCATION,English
+471,Branch location information,BRANCH_LOCATION,English
+472,ATM location information,BRANCH_LOCATION,English
+473,Nearest banking hall,BRANCH_LOCATION,English
+474,Can you show me your branches?,BRANCH_LOCATION,English
+475,I need your office location,BRANCH_LOCATION,English
+476,A ina reshen bankinku yake?,BRANCH_LOCATION,Hausa
+477,Nuna min reshen banki mafi kusa,BRANCH_LOCATION,Hausa
+478,Ina bukatar adireshin bankinku,BRANCH_LOCATION,Hausa
+479,Bankinku yana ina?,BRANCH_LOCATION,Hausa
+480,A ina ATM mafi kusa yake?,BRANCH_LOCATION,Hausa
+481,Ina zan samu ATM?,BRANCH_LOCATION,Hausa
+482,Karfe nawa banki yake budewa?,BRANCH_LOCATION,Hausa
+483,Yaushe banki yake budewa?,BRANCH_LOCATION,Hausa
+484,Yaushe banki yake rufewa?,BRANCH_LOCATION,Hausa
+485,Karfe nawa banki yake rufewa?,BRANCH_LOCATION,Hausa
+486,Reshen banki yana bude yau?,BRANCH_LOCATION,Hausa
+487,Wane reshen banki ne mafi kusa?,BRANCH_LOCATION,Hausa
+488,Yaya zan isa reshen bankinku?,BRANCH_LOCATION,Hausa
+489,Ina bukatar hanyar zuwa reshen bankinku,BRANCH_LOCATION,Hausa
+490,Kuna da reshe a Abuja?,BRANCH_LOCATION,Hausa
+491,Kuna da reshe a Lagos?,BRANCH_LOCATION,Hausa
+492,Akwai ATM kusa da ni?,BRANCH_LOCATION,Hausa
+493,Nuna min ATM mafi kusa,BRANCH_LOCATION,Hausa
+494,Ina hedikwatar bankinku take?,BRANCH_LOCATION,Hausa
+495,Bayani game da reshen banki,BRANCH_LOCATION,Hausa
+496,Bayani game da wurin ATM,BRANCH_LOCATION,Hausa
+497,Ina banking hall mafi kusa yake?,BRANCH_LOCATION,Hausa
+498,Nuna min dukkan rassan bankinku,BRANCH_LOCATION,Hausa
+499,Ina bukatar wurin ofishinku,BRANCH_LOCATION,Hausa
+500,Don Allah nuna min reshen bankinku,BRANCH_LOCATION,Hausa
+
+501,I need customer support,CUSTOMER_SUPPORT,English
+502,I need help,CUSTOMER_SUPPORT,English
+503,Can I speak to customer service?,CUSTOMER_SUPPORT,English
+504,I want to contact customer care,CUSTOMER_SUPPORT,English
+505,How do I contact customer support?,CUSTOMER_SUPPORT,English
+506,I have a complaint,CUSTOMER_SUPPORT,English
+507,I want to report a problem,CUSTOMER_SUPPORT,English
+508,I need assistance with my account,CUSTOMER_SUPPORT,English
+509,Please help me,CUSTOMER_SUPPORT,English
+510,I need technical support,CUSTOMER_SUPPORT,English
+511,I want to speak to an agent,CUSTOMER_SUPPORT,English
+512,Can I chat with customer care?,CUSTOMER_SUPPORT,English
+513,How can I reach your support team?,CUSTOMER_SUPPORT,English
+514,I need someone to help me,CUSTOMER_SUPPORT,English
+515,I have an issue with my account,CUSTOMER_SUPPORT,English
+516,Who can help me?,CUSTOMER_SUPPORT,English
+517,I need banking assistance,CUSTOMER_SUPPORT,English
+518,I have a banking problem,CUSTOMER_SUPPORT,English
+519,I want to report fraud,CUSTOMER_SUPPORT,English
+520,I suspect fraud on my account,CUSTOMER_SUPPORT,English
+521,I need urgent assistance,CUSTOMER_SUPPORT,English
+522,Can someone assist me?,CUSTOMER_SUPPORT,English
+523,I need support immediately,CUSTOMER_SUPPORT,English
+524,Customer care information,CUSTOMER_SUPPORT,English
+525,I want to file a complaint,CUSTOMER_SUPPORT,English
+526,Ina bukatar taimakon kwastomomi,CUSTOMER_SUPPORT,Hausa
+527,Ina bukatar taimako,CUSTOMER_SUPPORT,Hausa
+528,Zan iya magana da customer care?,CUSTOMER_SUPPORT,Hausa
+529,Ina son tuntubar customer care,CUSTOMER_SUPPORT,Hausa
+530,Yaya zan tuntubi customer support?,CUSTOMER_SUPPORT,Hausa
+531,Ina da korafi,CUSTOMER_SUPPORT,Hausa
+532,Ina son bayar da rahoton matsala,CUSTOMER_SUPPORT,Hausa
+533,Ina bukatar taimako game da account dina,CUSTOMER_SUPPORT,Hausa
+534,Don Allah ku taimake ni,CUSTOMER_SUPPORT,Hausa
+535,Ina bukatar technical support,CUSTOMER_SUPPORT,Hausa
+536,Ina son magana da ma'aikacin banki,CUSTOMER_SUPPORT,Hausa
+537,Zan iya yin magana da customer care?,CUSTOMER_SUPPORT,Hausa
+538,Yaya zan tuntubi kungiyar tallafi?,CUSTOMER_SUPPORT,Hausa
+539,Ina bukatar wani ya taimake ni,CUSTOMER_SUPPORT,Hausa
+540,Ina da matsala da account dina,CUSTOMER_SUPPORT,Hausa
+541,Wa zai iya taimaka min?,CUSTOMER_SUPPORT,Hausa
+542,Ina bukatar taimakon banki,CUSTOMER_SUPPORT,Hausa
+543,Ina da matsalar banki,CUSTOMER_SUPPORT,Hausa
+544,Ina son kai rahoton zamba,CUSTOMER_SUPPORT,Hausa
+545,Ina zargin an yi zamba a account dina,CUSTOMER_SUPPORT,Hausa
+546,Ina bukatar taimakon gaggawa,CUSTOMER_SUPPORT,Hausa
+547,Akwai wanda zai taimake ni?,CUSTOMER_SUPPORT,Hausa
+548,Ina bukatar tallafi nan da nan,CUSTOMER_SUPPORT,Hausa
+549,Bayani game da customer care,CUSTOMER_SUPPORT,Hausa
+550,Ina son yin korafi,CUSTOMER_SUPPORT,Hausa
+
+551,What services does your bank offer?,BANK_INFORMATION,English
+552,Tell me about your bank,BANK_INFORMATION,English
+553,I need information about your bank,BANK_INFORMATION,English
+554,What type of accounts do you offer?,BANK_INFORMATION,English
+555,What are your banking services?,BANK_INFORMATION,English
+556,Do you offer savings accounts?,BANK_INFORMATION,English
+557,Do you offer current accounts?,BANK_INFORMATION,English
+558,What are your interest rates?,BANK_INFORMATION,English
+559,Do you provide business banking?,BANK_INFORMATION,English
+560,What is your SWIFT code?,BANK_INFORMATION,English
+561,What is your bank code?,BANK_INFORMATION,English
+562,What currencies do you support?,BANK_INFORMATION,English
+563,Do you offer foreign exchange services?,BANK_INFORMATION,English
+564,What documents do I need for banking?,BANK_INFORMATION,English
+565,Can I open a domiciliary account?,BANK_INFORMATION,English
+566,Do you provide online banking services?,BANK_INFORMATION,English
+567,Do you provide mobile banking?,BANK_INFORMATION,English
+568,Tell me about your banking products,BANK_INFORMATION,English
+569,I need general banking information,BANK_INFORMATION,English
+570,What makes your bank different?,BANK_INFORMATION,English
+571,What financial services do you provide?,BANK_INFORMATION,English
+572,Does your bank offer investment services?,BANK_INFORMATION,English
+573,Can I save money with your bank?,BANK_INFORMATION,English
+574,I want information about your products,BANK_INFORMATION,English
+575,Give me information about your bank,BANK_INFORMATION,English
+576,Wadanne ayyuka bankinku yake bayarwa?,BANK_INFORMATION,Hausa
+577,Bani bayani game da bankinku,BANK_INFORMATION,Hausa
+578,Ina bukatar bayani game da bankinku,BANK_INFORMATION,Hausa
+579,Wadanne nau'ikan account kuke da su?,BANK_INFORMATION,Hausa
+580,Wadanne ayyukan banki kuke yi?,BANK_INFORMATION,Hausa
+581,Kuna da savings account?,BANK_INFORMATION,Hausa
+582,Kuna da current account?,BANK_INFORMATION,Hausa
+583,Menene kudin ruwa naku?,BANK_INFORMATION,Hausa
+584,Kuna da bankin kasuwanci?,BANK_INFORMATION,Hausa
+585,Menene SWIFT code dinku?,BANK_INFORMATION,Hausa
+586,Menene bank code dinku?,BANK_INFORMATION,Hausa
+587,Wadanne kudade kuke amfani da su?,BANK_INFORMATION,Hausa
+588,Kuna yin canjin kudin kasashen waje?,BANK_INFORMATION,Hausa
+589,Wadanne takardu ake bukata?,BANK_INFORMATION,Hausa
+590,Zan iya bude domiciliary account?,BANK_INFORMATION,Hausa
+591,Kuna da internet banking?,BANK_INFORMATION,Hausa
+592,Kuna da mobile banking?,BANK_INFORMATION,Hausa
+593,Bani bayani game da kayayyakin bankinku,BANK_INFORMATION,Hausa
+594,Ina bukatar cikakken bayani game da banki,BANK_INFORMATION,Hausa
+595,Me yasa zan zabi bankinku?,BANK_INFORMATION,Hausa
+596,Wadanne ayyukan kudi kuke bayarwa?,BANK_INFORMATION,Hausa
+597,Kuna da investment services?,BANK_INFORMATION,Hausa
+598,Zan iya ajiyar kudi a bankinku?,BANK_INFORMATION,Hausa
+599,Ina son bayani game da ayyukan bankinku,BANK_INFORMATION,Hausa
+600,Don Allah bani bayani game da bankinku,BANK_INFORMATION,Hausa

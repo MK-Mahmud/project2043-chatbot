@@ -1,25 +1,20 @@
-def format_response(intent, response):
+import re
 
-    title = intent.replace("_", " ").title()
 
-    formatted = f"""
-🏦 {title}
+def format_response(intent, answer):
+    """
+    Normalize a knowledge base answer before it is sent to the customer.
 
-────────────────────────────
+    Knowledge base answers are entered by administrators through plain
+    text fields, so this collapses stray whitespace/line breaks that can
+    creep in during data entry, keeping replies consistent regardless of
+    how they were typed.
+    """
 
-{response}
+    if not answer:
+        return answer
 
-────────────────────────────
+    # Collapse repeated whitespace (including newlines) into single spaces
+    answer = re.sub(r"\s+", " ", answer).strip()
 
-Is there anything else I can help you with?
-
-• 💳 ATM / Debit Card
-
-• 💰 Loan Services
-
-• 📱 Mobile Banking
-
-• 🏦 Branch Locations
-"""
-
-    return formatted
+    return answer

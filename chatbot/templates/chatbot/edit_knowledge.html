@@ -1,15 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Edit Knowledge</title>
+<meta charset="UTF-8">
 
-    <link
-        rel="stylesheet"
-        href="{% static 'chatbot/css/knowledge_form.css' %}">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Edit Knowledge
+
+</title>
+
+<link rel="stylesheet"
+href="{% static 'dashboard/css/dashboard.css' %}">
 
 </head>
 
@@ -17,37 +24,36 @@
 
 <div class="header">
 
-    <h1>✏ Edit Knowledge</h1>
+<h1>
 
-    <p>ABC Bank AI Knowledge Management</p>
+✏ Edit Knowledge Base Record
+
+</h1>
+
+<p>
+
+Update chatbot questions and responses
+
+</p>
 
 </div>
 
 <div class="container">
 
+<div class="chart-box">
+
 <form method="POST">
 
 {% csrf_token %}
 
-<div class="form-group">
+<label><strong>Intent</strong></label>
 
-<label>
-
-Intent
-
-</label>
-
-<select
-name="intent"
-required>
+<select name="intent" required>
 
 {% for intent in intents %}
 
-<option
-value="{{ intent.id }}"
-{% if intent.id == knowledge.intent.id %}
-selected
-{% endif %}>
+<option value="{{ intent.id }}"
+{% if knowledge.intent.id == intent.id %}selected{% endif %}>
 
 {{ intent.intent_name }}
 
@@ -57,73 +63,47 @@ selected
 
 </select>
 
-</div>
+<br><br>
 
-<div class="form-group">
-
-<label>
-
-English Question
-
-</label>
+<label><strong>English Question</strong></label>
 
 <textarea
 name="question_en"
 rows="3"
 required>{{ knowledge.question_en }}</textarea>
 
-</div>
+<br><br>
 
-<div class="form-group">
-
-<label>
-
-Hausa Question
-
-</label>
+<label><strong>Hausa Question</strong></label>
 
 <textarea
 name="question_ha"
 rows="3"
 required>{{ knowledge.question_ha }}</textarea>
 
-</div>
+<br><br>
 
-<div class="form-group">
-
-<label>
-
-English Answer
-
-</label>
+<label><strong>English Answer</strong></label>
 
 <textarea
 name="answer_en"
 rows="5"
 required>{{ knowledge.answer_en }}</textarea>
 
-</div>
+<br><br>
 
-<div class="form-group">
-
-<label>
-
-Hausa Answer
-
-</label>
+<label><strong>Hausa Answer</strong></label>
 
 <textarea
 name="answer_ha"
 rows="5"
 required>{{ knowledge.answer_ha }}</textarea>
 
-</div>
-
-<div class="buttons">
+<br><br>
 
 <button
 type="submit"
-class="save">
+class="btn">
 
 💾 Update Knowledge
 
@@ -131,15 +111,16 @@ class="save">
 
 <a
 href="{% url 'knowledge_base' %}"
-class="cancel">
+class="btn"
+style="background:#6c757d;">
 
 Cancel
 
 </a>
 
-</div>
-
 </form>
+
+</div>
 
 </div>
 

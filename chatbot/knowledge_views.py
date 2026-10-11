@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 
 from .models import (
     Intent,
@@ -10,38 +11,13 @@ from .models import (
 
 
 # ==========================================================
-# ADMIN PANEL
-# ==========================================================
-
-def admin_panel(request):
-
-    context = {
-
-        "total_chats": ChatHistory.objects.count(),
-
-        "total_feedback": Feedback.objects.count(),
-
-        "knowledge": KnowledgeBase.objects.count(),
-
-        "unanswered": UnansweredQuery.objects.count(),
-
-    }
-
-    return render(
-
-        request,
-
-        "chatbot/admin_panel.html",
-
-        context
-
-    )
-
-
-# ==========================================================
 # KNOWLEDGE BASE
 # ==========================================================
+# NOTE: admin_panel is defined once in views.py and reused here;
+# the duplicate definition that used to live in this file (and the
+# resulting duplicate "admin_panel" URL name) has been removed.
 
+@login_required
 def knowledge_base(request):
 
     knowledge = KnowledgeBase.objects.select_related(
@@ -73,6 +49,7 @@ def knowledge_base(request):
 # ADD KNOWLEDGE
 # ==========================================================
 
+@login_required
 def add_knowledge(request):
 
     if request.method == "POST":
@@ -85,7 +62,7 @@ def add_knowledge(request):
 
         )
 
-        KnowledgeBase.objects.create(
+        kb = KnowledgeBase.objects.create(
 
             intent=intent,
 
@@ -122,6 +99,7 @@ def add_knowledge(request):
 # EDIT KNOWLEDGE
 # ==========================================================
 
+@login_required
 def edit_knowledge(request, pk):
 
     knowledge = get_object_or_404(
@@ -177,6 +155,7 @@ def edit_knowledge(request, pk):
 # DELETE KNOWLEDGE
 # ==========================================================
 
+@login_required
 def delete_knowledge(request, pk):
 
     knowledge = get_object_or_404(

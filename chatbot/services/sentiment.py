@@ -1,8 +1,24 @@
 import re
 
+"""
+Rule-based sentiment analysis.
+
+An ML alternative (TF-IDF + Naive Bayes / LinearSVC, see
+chatbot/train_sentiment.py) was trained and evaluated on a
+120-example, 3-class labelled dataset. It reached only ~60%
+cross-validated accuracy -- too little labelled data for a 3-class
+text classifier to reliably beat a curated keyword list. The
+rule-based approach below reached 69.2% on the same data, so it is
+used in production. See chatbot/ai/evaluate_sentiment.py for the
+side-by-side comparison. Retraining the ML model on a larger, more
+varied dataset is listed as future work.
+"""
+
+
 def analyze_sentiment(message):
     """
-    Improved rule-based sentiment analysis.
+    Rule-based sentiment analysis using curated positive/negative
+    keyword lists. Returns "Positive", "Negative", or "Neutral".
     """
 
     # Remove punctuation

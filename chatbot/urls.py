@@ -1,10 +1,9 @@
 from django.urls import path
+from django.contrib.auth import views as auth_views
 
 from . import views
-from .views import submit_feedback
-
+from .views import submit_feedback, clear_chat
 from .knowledge_views import (
-    admin_panel,
     knowledge_base,
     add_knowledge,
     edit_knowledge,
@@ -16,15 +15,25 @@ urlpatterns = [
     path("", views.home, name="home"),
 
     path(
-        "feedback/",
-        submit_feedback,
-        name="feedback"
+        "login/",
+        auth_views.LoginView.as_view(
+            template_name="registration/login.html"
+        ),
+        name="login"
     ),
 
     path(
-        "panel/",
-        admin_panel,
-        name="admin_panel"
+        "logout/",
+        views.PreserveChatLogoutView.as_view(
+            next_page="login"
+        ),
+        name="logout"
+    ),
+
+    path(
+        "feedback/",
+        submit_feedback,
+        name="feedback"
     ),
 
     path(
@@ -50,5 +59,37 @@ urlpatterns = [
         delete_knowledge,
         name="delete_knowledge"
     ),
+    path(
+    "clear-chat/",
+    clear_chat,
+    name="clear_chat"
+    ),
+    path(
+    "chat-history/",
+    views.chat_history,
+    name="chat_history"
+    ),
+    path(
 
+    "feedback-list/",
+
+    views.feedback_list,
+
+    name="feedback_list"
+
+    ),
+    path(
+
+    "unanswered/",
+
+    views.unanswered_questions,
+
+    name="unanswered_questions"
+
+    ),
+    path(
+    "admin-panel/",
+    views.admin_panel,
+    name="admin_panel"
+    ),
 ]

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +21,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-av)d7igpaamy$b%l^9chofuerd-rq&mqzmpe%je-qm4)s_0uuf'
+# The fallback value below is only for local development. Before
+# deploying, set a real DJANGO_SECRET_KEY environment variable and
+# never commit that value to source control.
+SECRET_KEY = os.environ.get(
+    "DJANGO_SECRET_KEY",
+    "django-insecure-av)d7igpaamy$b%l^9chofuerd-rq&mqzmpe%je-qm4)s_0uuf",
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Defaults to True for local development; set DJANGO_DEBUG=False in
+# any environment where the app is exposed beyond localhost.
+DEBUG = os.environ.get("DJANGO_DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = []
+# Comma-separated list of allowed hosts, e.g. "example.com,www.example.com"
+# Defaults to "*" for local development only.
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(",")
 
 
 # Application definition
@@ -37,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'chatbot',
+    'chatbot',
     'dashboard',
 ]
 
@@ -117,6 +128,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+
+# App-level static folders (chatbot/static, dashboard/static) are
+# discovered automatically by Django's AppDirectoriesFinder, so no
+# STATICFILES_DIRS entry is needed for them. STATIC_ROOT is where
+# `python manage.py collectstatic` gathers files for production.
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "admin_panel"

@@ -1,15 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Add Knowledge</title>
+    <meta charset="UTF-8">
 
-    <link
-        rel="stylesheet"
-        href="{% static 'chatbot/css/knowledge_form.css' %}">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Add Knowledge
+
+    </title>
+
+    <link rel="stylesheet"
+          href="{% static 'dashboard/css/dashboard.css' %}">
 
 </head>
 
@@ -17,29 +24,35 @@
 
 <div class="header">
 
-    <h1>➕ Add Knowledge</h1>
+    <h1>
 
-    <p>ABC Bank AI Knowledge Management</p>
+        ➕ Add Knowledge Base Record
+
+    </h1>
+
+    <p>
+
+        Add a new chatbot question and response
+
+    </p>
 
 </div>
 
 <div class="container">
 
+<div class="chart-box">
+
 <form method="POST">
 
 {% csrf_token %}
 
-<div class="form-group">
-
 <label>
 
-Intent
+<strong>Intent</strong>
 
 </label>
 
-<select
-name="intent"
-required>
+<select name="intent" required>
 
 <option value="">
 
@@ -59,13 +72,11 @@ Select Intent
 
 </select>
 
-</div>
-
-<div class="form-group">
+<br><br>
 
 <label>
 
-English Question
+<strong>English Question</strong>
 
 </label>
 
@@ -75,15 +86,15 @@ name="question_en"
 
 rows="3"
 
-required></textarea>
+required>
 
-</div>
+</textarea>
 
-<div class="form-group">
+<br><br>
 
 <label>
 
-Hausa Question
+<strong>Hausa Question</strong>
 
 </label>
 
@@ -93,15 +104,15 @@ name="question_ha"
 
 rows="3"
 
-required></textarea>
+required>
 
-</div>
+</textarea>
 
-<div class="form-group">
+<br><br>
 
 <label>
 
-English Answer
+<strong>English Answer</strong>
 
 </label>
 
@@ -111,15 +122,15 @@ name="answer_en"
 
 rows="5"
 
-required></textarea>
+required>
 
-</div>
+</textarea>
 
-<div class="form-group">
+<br><br>
 
 <label>
 
-Hausa Answer
+<strong>Hausa Answer</strong>
 
 </label>
 
@@ -129,31 +140,37 @@ name="answer_ha"
 
 rows="5"
 
-required></textarea>
+required>
 
-</div>
+</textarea>
 
-<div class="buttons">
+<br><br>
 
 <button
+
 type="submit"
-class="save">
+
+class="btn">
 
 💾 Save Knowledge
 
 </button>
 
 <a
+
 href="{% url 'knowledge_base' %}"
-class="cancel">
+
+class="btn"
+
+style="background:#6c757d;">
 
 Cancel
 
 </a>
 
-</div>
-
 </form>
+
+</div>
 
 </div>
 

@@ -1,167 +1,194 @@
-// =======================================
-// ABC BANK ANALYTICS DASHBOARD
-// =======================================
+// ===========================================
+// ABC BANK AI DASHBOARD
+// dashboard.js
+// ===========================================
 
-// Wait until the page loads
+// ===============================
+// SENTIMENT CHART
+// ===============================
 
-document.addEventListener("DOMContentLoaded", function () {
+const sentimentCtx = document
+    .getElementById("sentimentChart")
+    .getContext("2d");
 
-    // -----------------------------
-    // Sentiment Pie Chart
-    // -----------------------------
+new Chart(sentimentCtx, {
 
-    const sentimentCanvas =
-        document.getElementById("sentimentChart");
+    type: "pie",
 
-    if (sentimentCanvas) {
+    data: {
 
-        new Chart(sentimentCanvas, {
+        labels: [
 
-            type: "pie",
+            "Positive",
+            "Neutral",
+            "Negative"
 
-            data: {
+        ],
 
-                labels: [
-                    "Positive",
-                    "Neutral",
-                    "Negative"
-                ],
+        datasets: [{
 
-                datasets: [{
+            data: [
 
-                    data: [
-                        positiveChats,
-                        neutralChats,
-                        negativeChats
-                    ]
+                positiveChats,
+                neutralChats,
+                negativeChats
 
-                }]
+            ],
 
-            },
+            backgroundColor: [
 
-            options: {
+                "#198754",
+                "#ffc107",
+                "#dc3545"
 
-                responsive: true,
+            ],
 
-                plugins: {
+            borderWidth: 1
 
-                    legend: {
+        }]
 
-                        position: "bottom"
+    },
 
-                    }
+    options: {
 
-                }
+        responsive: true,
+
+        plugins: {
+
+            legend: {
+
+                position: "bottom"
 
             }
 
-        });
+        }
 
     }
 
-    // -----------------------------
-    // Language Chart
-    // -----------------------------
+});
 
-    const languageCanvas =
-        document.getElementById("languageChart");
 
-    if (languageCanvas) {
+// ===============================
+// LANGUAGE CHART
+// ===============================
 
-        new Chart(languageCanvas, {
+const languageCtx = document
+    .getElementById("languageChart")
+    .getContext("2d");
 
-            type: "bar",
+new Chart(languageCtx, {
 
-            data: {
+    type: "doughnut",
 
-                labels: [
+    data: {
 
-                    "English",
+        labels: [
 
-                    "Hausa"
+            "English",
+            "Hausa"
 
-                ],
+        ],
 
-                datasets: [{
+        datasets: [{
 
-                    label: "Number of Chats",
+            data: [
 
-                    data: [
+                englishChats,
+                hausaChats
 
-                        englishChats,
+            ],
 
-                        hausaChats
+            backgroundColor: [
 
-                    ]
+                "#0d6efd",
+                "#6f42c1"
 
-                }]
+            ],
 
-            },
+            borderWidth: 1
 
-            options: {
+        }]
 
-                responsive: true,
+    },
 
-                scales: {
+    options: {
 
-                    y: {
+        responsive: true,
 
-                        beginAtZero: true
+        plugins: {
 
-                    }
+            legend: {
 
-                }
+                position: "bottom"
 
             }
 
-        });
+        }
 
     }
 
-    // -----------------------------
-    // Intent Distribution
-    // -----------------------------
+});
 
-    const intentCanvas =
-        document.getElementById("intentChart");
 
-    if (intentCanvas) {
+// ===============================
+// INTENT DISTRIBUTION
+// ===============================
 
-        new Chart(intentCanvas, {
+const intentCtx = document
+    .getElementById("intentChart")
+    .getContext("2d");
 
-            type: "bar",
+new Chart(intentCtx, {
 
-            data: {
+    type: "bar",
 
-                labels: intentLabels,
+    data: {
 
-                datasets: [{
+        labels: intentLabels,
 
-                    label: "Requests",
+        datasets: [{
 
-                    data: intentTotals
+            label: "Total Requests",
 
-                }]
+            data: intentTotals,
 
-            },
+            backgroundColor: "#003366",
 
-            options: {
+            borderRadius: 8
 
-                responsive: true,
+        }]
 
-                scales: {
+    },
 
-                    y: {
+    options: {
 
-                        beginAtZero: true
+        responsive: true,
 
-                    }
+        plugins: {
+
+            legend: {
+
+                display: false
+
+            }
+
+        },
+
+        scales: {
+
+            y: {
+
+                beginAtZero: true,
+
+                ticks: {
+
+                    precision: 0
 
                 }
 
             }
 
-        });
+        }
 
     }
 

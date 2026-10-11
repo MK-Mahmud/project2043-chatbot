@@ -1,9 +1,10 @@
 import random
 from datetime import datetime
 from .services.response_formatter import format_response
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
-
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.views import LogoutView
 from .models import (
     Intent,
     KnowledgeBase,
@@ -229,7 +230,7 @@ You can ask me about:
 # ============================================
 # FEEDBACK
 # ============================================
-
+@login_required
 def submit_feedback(request):
 
     if request.method == "POST":
@@ -273,3 +274,136 @@ def submit_feedback(request):
         "success": False
 
     })
+def clear_chat(request):
+
+    request.session["conversation"] = []
+
+    if "last_chat_id" in request.session:
+        del request.session["last_chat_id"]
+
+    return redirect("home")
+# ==========================================================
+# CHAT HISTORY
+# ==========================================================
+@login_required
+def chat_history(request):
+
+    chats = ChatHistory.objects.order_by("-timestamp")
+
+    return render(
+
+        request,
+
+        "chatbot/chat_history.html",
+
+        {
+
+            "chats": chats
+
+        }
+
+    )
+# ==========================================================
+# CUSTOMER FEEDBACK
+# ==========================================================
+@login_required
+def feedback_list(request):
+
+    feedbacks = Feedback.objects.select_related(
+
+        "chat"
+
+    ).order_by(
+
+        "-id"
+
+    )
+
+    return render(
+
+        request,
+
+        "chatbot/feedback.html",
+
+        {
+
+            "feedbacks": feedbacks
+
+        }
+
+    )
+# ==========================================================
+# UNANSWERED QUESTIONS
+# ==========================================================
+@login_required
+def unanswered_questions(request):
+
+    unanswered = UnansweredQuery.objects.order_by(
+
+        "-date_submitted"
+
+    )
+
+    return render(
+
+        request,
+
+        "chatbot/unanswered_questions.html",
+
+        {
+
+            "unanswered": unanswered
+
+        }
+
+    )
+@login_required
+def admin_panel(request):
+
+    context = {
+
+        "total_chats": ChatHistory.objects.count(),
+
+        "total_feedback": Feedback.objects.count(),
+
+        "knowledge": KnowledgeBase.objects.count(),
+
+        "unanswered": UnansweredQuery.objects.count(),
+
+    }
+
+    return render(
+        request,
+        "chatbot/admin_panel.html",
+        context
+    )
+
+
+# ==========================================================
+# LOGOUT (preserves the customer chat widget's conversation)
+# ==========================================================
+class PreserveChatLogoutView(LogoutView):
+    """
+    Django's default logout flushes the entire session, which would
+    also wipe the customer chat conversation stored under the
+    "conversation" session key. Since the admin dashboard and the
+    customer chat widget share the same session in this project (both
+    run in one browser during local testing/demo use), logging an
+    administrator out would otherwise clear whatever conversation was
+    on screen. This subclass carries the conversation across the
+    logout so the chat widget isn't affected by an admin session
+    ending.
+    """
+
+    def post(self, request, *args, **kwargs):
+        conversation = request.session.get("conversation")
+        last_chat_id = request.session.get("last_chat_id")
+
+        response = super().post(request, *args, **kwargs)
+
+        if conversation is not None:
+            request.session["conversation"] = conversation
+        if last_chat_id is not None:
+            request.session["last_chat_id"] = last_chat_id
+
+        return response

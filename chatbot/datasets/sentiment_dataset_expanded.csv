@@ -1,0 +1,121 @@
+text,sentiment
+Thank you,Positive
+Thanks a lot,Positive
+Thank you very much for your help,Positive
+I really appreciate your help,Positive
+Excellent service today,Positive
+That was very good,Positive
+Amazing service as always,Positive
+"Awesome, that solved my problem",Positive
+"Perfect, exactly what I needed",Positive
+"Wonderful, thank you so much",Positive
+Fantastic response time,Positive
+"Great work, keep it up",Positive
+I am really happy with this bank,Positive
+I love how easy this app is to use,Positive
+Best bank I have ever used,Positive
+Nice and quick service,Positive
+"Well done, my issue was solved fast",Positive
+The staff were very helpful,Positive
+I am satisfied with the support I received,Positive
+Everything is working fine now,Positive
+I am grateful for the quick response,Positive
+Thanks for resolving my issue so fast,Positive
+This app makes banking so easy,Positive
+Good customer service as usual,Positive
+Very impressive turnaround time,Positive
+"My loan was approved so quickly, I am thrilled",Positive
+"The new update fixed everything, well done",Positive
+"I opened my account in minutes, very smooth process",Positive
+"Your chatbot actually understood my question, impressive",Positive
+"I finally got my card issue sorted, thank you",Positive
+This is exactly the help I was looking for,Positive
+"Superb, my transfer went through instantly",Positive
+You guys are doing a great job,Positive
+I'm impressed by how fast that was,Positive
+"My balance updated immediately, nice",Positive
+Really smooth experience from start to finish,Positive
+I can always count on this bank,Positive
+The mobile banking feature is fantastic,Positive
+Kudos to your support team,Positive
+That response was super helpful,Positive
+I am angry about this,Negative
+This is terrible,Negative
+Bad service today,Negative
+That was very bad,Negative
+I hate dealing with this bank,Negative
+Awful experience with customer support,Negative
+Poor customer service as always,Negative
+I am really disappointed,Negative
+This is so frustrating,Negative
+I have a serious complaint,Negative
+The ATM failed to dispense my cash,Negative
+My transaction failed again,Negative
+My card is blocked and nobody is helping me,Negative
+The system is way too slow,Negative
+Very slow service today,Negative
+I cannot login to my account,Negative
+There is an error every time I try,Negative
+I am unhappy with this response,Negative
+Worst service I have ever received,Negative
+I am extremely frustrated right now,Negative
+Nothing works on this app,Negative
+This is completely unacceptable,Negative
+"Delays everywhere, this is ridiculous",Negative
+I am very disappointed in this bank,Negative
+"Terrible support, no one is responding",Negative
+My loan application was rejected for no reason,Negative
+This chatbot never understands what I am asking,Negative
+I have been waiting for hours with no response,Negative
+Why does this keep failing every single time,Negative
+This is the third time my transfer has failed,Negative
+"I want to close my account, I am fed up",Negative
+Nobody answers the customer support line,Negative
+The app keeps crashing whenever I try to log in,Negative
+My money is missing from my account,Negative
+I was charged twice for the same transaction,Negative
+This experience has been a nightmare,Negative
+I regret opening an account here,Negative
+Your staff was rude to me today,Negative
+This bank is a disgrace,Negative
+Hello,Neutral
+Hi there,Neutral
+Good morning,Neutral
+I need a loan,Neutral
+I want to open an account,Neutral
+Can you check my balance,Neutral
+I want to transfer money,Neutral
+Reset my ATM PIN please,Neutral
+Where is your nearest branch,Neutral
+How does mobile banking work,Neutral
+Tell me about internet banking,Neutral
+I need a new debit card,Neutral
+How do I apply for a loan,Neutral
+How do I register for an account,Neutral
+Can you help me with something,Neutral
+I have a question about fees,Neutral
+What documents do I need to open an account,Neutral
+What is my account balance,Neutral
+Are there any ATM services nearby,Neutral
+Tell me about the bank,Neutral
+I want to speak to customer support,Neutral
+Where is the closest branch located,Neutral
+Good afternoon,Neutral
+Good evening,Neutral
+What services do you offer,Neutral
+What are your working hours,Neutral
+How long does a transfer take,Neutral
+What is the interest rate on savings,Neutral
+Can I change my registered phone number,Neutral
+How do I activate mobile banking,Neutral
+I want to update my address,Neutral
+Do you have a savings account option,Neutral
+What is required for a loan application,Neutral
+How do I check my transaction history,Neutral
+Is there a fee for international transfers,Neutral
+Can I link two accounts together,Neutral
+What time does the branch open,Neutral
+How do I generate a bank statement,Neutral
+Can I set up a standing order,Neutral
+What is needed to reset my password,Neutral
+Do you offer student accounts,Neutral

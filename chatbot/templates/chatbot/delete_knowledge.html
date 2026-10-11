@@ -1,15 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
 
-<title>Delete Knowledge</title>
+<meta charset="UTF-8">
 
-<link
-rel="stylesheet"
-href="{% static 'chatbot/css/knowledge_form.css' %}">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Delete Knowledge
+
+</title>
+
+<link rel="stylesheet"
+href="{% static 'dashboard/css/dashboard.css' %}">
 
 </head>
 
@@ -17,27 +24,82 @@ href="{% static 'chatbot/css/knowledge_form.css' %}">
 
 <div class="header">
 
-<h1>Delete Knowledge</h1>
+<h1>
+
+🗑 Delete Knowledge Record
+
+</h1>
+
+<p>
+
+Confirm before permanently deleting this record
+
+</p>
 
 </div>
 
 <div class="container">
 
-<h2>
+<div class="chart-box" style="max-width:850px;margin:auto;">
 
-Are you sure?
+<h2
+style="color:#dc3545;margin-bottom:25px;">
+
+Are you sure you want to delete this record?
 
 </h2>
 
-<br>
+<table>
 
-<p>
+<tr>
 
-<strong>Question:</strong>
+<th style="width:220px;">
+
+Intent
+
+</th>
+
+<td>
+
+{{ knowledge.intent.intent_name }}
+
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+English Question
+
+</th>
+
+<td>
 
 {{ knowledge.question_en }}
 
-</p>
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+
+Hausa Question
+
+</th>
+
+<td>
+
+{{ knowledge.question_ha }}
+
+</td>
+
+</tr>
+
+</table>
 
 <br>
 
@@ -45,27 +107,27 @@ Are you sure?
 
 {% csrf_token %}
 
-<div class="buttons">
-
 <button
 type="submit"
-class="cancel">
+class="btn"
+style="background:#dc3545;">
 
-Delete
+🗑 Delete Permanently
 
 </button>
 
 <a
 href="{% url 'knowledge_base' %}"
-class="save">
+class="btn"
+style="background:#6c757d;">
 
 Cancel
 
 </a>
 
-</div>
-
 </form>
+
+</div>
 
 </div>
 

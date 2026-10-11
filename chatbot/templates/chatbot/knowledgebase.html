@@ -1,13 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Knowledge Base Management</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Knowledge Base Management
+
+    </title>
 
     <link rel="stylesheet"
-          href="{% static 'chatbot/css/knowledgebase.css' %}">
+          href="{% static 'dashboard/css/dashboard.css' %}">
 
 </head>
 
@@ -15,19 +24,39 @@
 
 <div class="header">
 
-    <h1>🏦 ABC Bank Knowledge Base</h1>
+    <h1>
 
-    <p>Manage Chatbot Questions and Answers</p>
+        📚 Knowledge Base Management
+
+    </h1>
+
+    <p>
+
+        Manage chatbot questions and responses
+
+    </p>
 
 </div>
 
 <div class="container">
 
-    <div class="top-bar">
+<div class="chart-box">
 
-        <a href="{% url 'add_knowledge' %}" class="btn-add">
+    <div style="display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:25px;">
 
-            ➕ Add New Knowledge
+        <h2 class="section-title">
+
+            Knowledge Base Records
+
+        </h2>
+
+        <a href="{% url 'add_knowledge' %}"
+           class="btn">
+
+            + Add New Knowledge
 
         </a>
 
@@ -37,17 +66,17 @@
 
         <thead>
 
-        <tr>
+            <tr>
 
-            <th>Intent</th>
+                <th>Intent</th>
 
-            <th>English Question</th>
+                <th>English Question</th>
 
-            <th>Hausa Question</th>
+                <th>Hausa Question</th>
 
-            <th>Actions</th>
+                <th>Actions</th>
 
-        </tr>
+            </tr>
 
         </thead>
 
@@ -57,23 +86,38 @@
 
         <tr>
 
-            <td>{{ item.intent.intent_name }}</td>
+            <td>
 
-            <td>{{ item.question_en }}</td>
+                {{ item.intent.intent_name }}
 
-            <td>{{ item.question_ha }}</td>
+            </td>
 
             <td>
 
-                <a href="{% url 'edit_knowledge' item.id %}"
-                   class="edit">
+                {{ item.question_en|truncatechars:60 }}
+
+            </td>
+
+            <td>
+
+                {{ item.question_ha|truncatechars:60 }}
+
+            </td>
+
+            <td>
+                                <a href="{% url 'edit_knowledge' item.id %}"
+                   class="btn"
+                   style="padding:8px 14px;font-size:14px;">
 
                     Edit
 
                 </a>
 
                 <a href="{% url 'delete_knowledge' item.id %}"
-                   class="delete">
+                   class="btn"
+                   style="background:#dc3545;
+                          padding:8px 14px;
+                          font-size:14px;">
 
                     Delete
 
@@ -87,9 +131,10 @@
 
         <tr>
 
-            <td colspan="4">
+            <td colspan="4"
+                style="text-align:center;padding:30px;">
 
-                No Knowledge Available
+                No knowledge has been added yet.
 
             </td>
 
@@ -100,6 +145,18 @@
         </tbody>
 
     </table>
+
+</div>
+
+<div class="footer">
+
+    <a href="{% url 'admin_panel' %}" class="btn">
+
+← Back to Admin Panel
+
+</a>
+
+</div>
 
 </div>
 

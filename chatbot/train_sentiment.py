@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
 data = pd.read_csv(
-    "chatbot/datasets/sentiment_dataset.csv"
+    "chatbot/datasets/sentiment_dataset_expanded.csv"
 )
 
 X = data["text"]

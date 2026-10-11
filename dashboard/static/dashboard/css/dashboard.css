@@ -1,25 +1,27 @@
-/* ===========================================
-   ABC BANK ANALYTICS DASHBOARD
-=========================================== */
+/* ===================================================
+   ABC BANK AI CUSTOMER SUPPORT SYSTEM
+   Administrator Dashboard
+=================================================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
 
-    background:#eef3f8;
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f7fb;
 
     color:#333;
 
 }
 
-/* ===========================================
-HEADER
-=========================================== */
+/* ==========================================
+   HEADER
+========================================== */
 
 .header{
 
@@ -27,31 +29,33 @@ HEADER
 
     color:white;
 
-    padding:25px;
-
     text-align:center;
 
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    padding:30px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
 
 }
 
 .header h1{
 
-    margin-bottom:10px;
-
     font-size:34px;
+
+    margin-bottom:10px;
 
 }
 
 .header p{
 
-    font-size:16px;
+    font-size:18px;
+
+    opacity:.9;
 
 }
 
-/* ===========================================
-CONTAINER
-=========================================== */
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
 
 .container{
 
@@ -59,13 +63,29 @@ CONTAINER
 
     max-width:1500px;
 
-    margin:35px auto;
+    margin:30px auto;
 
 }
 
-/* ===========================================
-CARDS
-=========================================== */
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.section-title{
+
+    color:#003366;
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================
+   SUMMARY CARDS
+========================================== */
 
 .cards{
 
@@ -87,7 +107,9 @@ CARDS
 
     padding:25px;
 
-    box-shadow:0 6px 15px rgba(0,0,0,.12);
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
 
     transition:.3s;
 
@@ -97,33 +119,29 @@ CARDS
 
     transform:translateY(-6px);
 
-    box-shadow:0 12px 25px rgba(0,0,0,.18);
-
 }
 
 .card h2{
 
-    color:#003366;
-
     font-size:40px;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
+
+    color:#003366;
 
 }
 
 .card p{
 
-    color:#555;
-
-    font-size:18px;
+    font-size:17px;
 
     font-weight:bold;
 
+    color:#666;
+
 }
 
-/* ===========================================
-TOP BORDER COLORS
-=========================================== */
+/* Card Colors */
 
 .total{
 
@@ -172,78 +190,23 @@ TOP BORDER COLORS
     border-top:6px solid #fd7e14;
 
 }
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
 
-/* ===========================================
-TABLE
-=========================================== */
+.quick-actions{
 
-table{
+    display:grid;
 
-    width:100%;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
-    border-collapse:collapse;
+    gap:20px;
 
     margin-top:20px;
 
 }
 
-thead{
-
-    background:#003366;
-
-    color:white;
-
-}
-
-th{
-
-    padding:14px;
-
-    text-align:left;
-
-}
-
-td{
-
-    padding:14px;
-
-    border-bottom:1px solid #ddd;
-
-}
-
-tbody tr:nth-child(even){
-
-    background:#f8f9fa;
-
-}
-
-tbody tr:hover{
-
-    background:#eef5ff;
-
-}
-
-/* ===========================================
-SECTION TITLES
-=========================================== */
-
-.section-title{
-
-    color:#003366;
-
-    margin-bottom:20px;
-
-}
-
-/* ===========================================
-BUTTON
-=========================================== */
-
-.btn{
-
-    display:inline-block;
-
-    margin-top:30px;
+.action-btn{
 
     background:#003366;
 
@@ -251,35 +214,49 @@ BUTTON
 
     text-decoration:none;
 
-    padding:12px 25px;
+    border-radius:15px;
 
-    border-radius:8px;
+    padding:25px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:bold;
 
     transition:.3s;
 
-}
+    display:flex;
 
-.btn:hover{
+    flex-direction:column;
 
-    background:#0055aa;
+    justify-content:center;
 
-}
+    align-items:center;
 
-/* ===========================================
-CHARTS
-=========================================== */
+    gap:12px;
 
-.chart-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
-
-    gap:25px;
-
-    margin-bottom:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 
 }
+
+.action-btn:hover{
+
+    background:#0056b3;
+
+    transform:translateY(-5px);
+
+}
+
+.action-btn span{
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   CHART BOXES
+========================================== */
 
 .chart-box{
 
@@ -287,21 +264,136 @@ CHARTS
 
     padding:25px;
 
+    margin-bottom:30px;
+
     border-radius:15px;
 
-    box-shadow:0 6px 15px rgba(0,0,0,.12);
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
 
 }
 
-.chart-box canvas{
+.chart-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+canvas{
+
+    width:100% !important;
 
     max-height:350px;
 
 }
 
-/* ===========================================
-FOOTER
-=========================================== */
+/* ==========================================
+   TOP INTENT
+========================================== */
+
+.top-intent{
+
+    color:#198754;
+
+    font-size:40px;
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+
+}
+
+.top-total{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+/* ==========================================
+   TABLES
+========================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:15px;
+
+    background:white;
+
+}
+
+table thead{
+
+    background:#003366;
+
+    color:white;
+
+}
+
+table th{
+
+    padding:14px;
+
+    text-align:left;
+
+    font-size:16px;
+
+}
+
+table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #e5e5e5;
+
+    font-size:15px;
+
+}
+
+table tbody tr:nth-child(even){
+
+    background:#f8f9fc;
+
+}
+
+table tbody tr:hover{
+
+    background:#eef5ff;
+
+    transition:.3s;
+
+}
+
+/* ==========================================
+   SECONDARY CARDS
+========================================== */
+
+.secondary-cards{
+
+    margin-top:10px;
+
+    margin-bottom:35px;
+
+}
+
+.secondary-cards .card{
+
+    border-top:6px solid #20c997;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
 
 .footer{
 
@@ -311,30 +403,134 @@ FOOTER
 
 }
 
-/* ===========================================
-RESPONSIVE
-=========================================== */
+.btn{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    background:#003366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#002347;
+
+    transform:translateY(-3px);
+
+}
+
+.logout-form{
+
+    display:inline-block;
+
+}
+
+.logout-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-family:inherit;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:992px){
+
+    .chart-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 
 @media(max-width:768px){
 
-.header h1{
+    .header h1{
 
-font-size:28px;
+        font-size:26px;
+
+    }
+
+    .header p{
+
+        font-size:16px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .quick-actions{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .card h2{
+
+        font-size:32px;
+
+    }
 
 }
 
-.card h2{
+@media(max-width:576px){
 
-font-size:32px;
+    .cards{
 
-}
+        grid-template-columns:1fr;
 
-th,td{
+    }
 
-font-size:14px;
+    .quick-actions{
 
-padding:10px;
+        grid-template-columns:1fr;
 
-}
+    }
+
+    .chart-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .container{
+
+        width:96%;
+
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
 
 }

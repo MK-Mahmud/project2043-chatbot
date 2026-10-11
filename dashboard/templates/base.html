@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}
+        ABC Bank Admin
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet"
+          href="{% static 'dashboard/css/dashboard.css' %}">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>🏦 ABC BANK</h2>
+
+            <p>AI Customer Support</p>
+
+        </div>
+
+        <ul>
+
+            <li>
+
+                <a href="/panel/">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/dashboard/">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    Analytics
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/knowledge/">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    Knowledge Base
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    Chat History
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    Feedback
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-circle-question"></i>
+
+                    Unanswered
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/admin/">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    Django Admin
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

@@ -1,14 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
 
-    <title>ABC Bank Admin Panel</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet"
-          href="{% static 'chatbot/css/admin_panel.css' %}">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Administrator Panel
+
+</title>
+
+<link rel="stylesheet"
+href="{% static 'dashboard/css/dashboard.css' %}">
 
 </head>
 
@@ -16,9 +24,17 @@
 
 <div class="header">
 
-    <h1>🏦 ABC Bank Admin Control Panel</h1>
+<h1>
 
-    <p>AI-Powered Customer Inquiry Management System</p>
+🛠 Administrator Control Panel
+
+</h1>
+
+<p>
+
+ABC Bank AI Customer Support System
+
+</p>
 
 </div>
 
@@ -26,59 +42,145 @@
 
 <div class="cards">
 
-<div class="card">
+<a href="{% url 'dashboard' %}" class="action-btn">
 
-<h2>{{ total_chats }}</h2>
+📊
 
-<p>Total Chats</p>
+<span>
 
-</div>
+Analytics Dashboard
 
-<div class="card">
-
-<h2>{{ total_feedback }}</h2>
-
-<p>User Feedback</p>
-
-</div>
-
-<div class="card">
-
-<h2>{{ unanswered }}</h2>
-
-<p>Unanswered Questions</p>
-
-</div>
-
-<div class="card">
-
-<h2>{{ knowledge }}</h2>
-
-<p>Knowledge Base</p>
-
-</div>
-
-</div>
-
-<div class="menu">
-
-<a href="/dashboard/" class="menu-btn">
-
-📊 Analytics Dashboard
+</span>
 
 </a>
 
-<a href="/knowledge/" class="menu-btn">
+<a href="{% url 'knowledge_base' %}" class="action-btn">
 
-📚 Knowledge Base
+📚
+
+<span>
+
+Knowledge Base
+
+</span>
 
 </a>
 
-<a href="/admin/" class="menu-btn">
+<a href="{% url 'chat_history' %}" class="action-btn">
 
-⚙ Django Admin
+💬
+
+<span>
+
+Chat History
+
+</span>
 
 </a>
+
+<a href="{% url 'feedback_list' %}" class="action-btn">
+
+⭐
+
+<span>
+
+Customer Feedback
+
+</span>
+
+</a>
+
+<a href="{% url 'unanswered_questions' %}" class="action-btn">
+
+❓
+
+<span>
+
+Unanswered Questions
+
+</span>
+
+</a>
+
+<a href="/admin/" class="action-btn">
+
+⚙
+
+<span>
+
+👤 User Management
+
+</span>
+
+</a>
+
+</div>
+
+<div class="chart-box">
+
+<h2 class="section-title">
+
+System Summary
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Total Conversations</th>
+
+<td>{{ total_chats }}</td>
+
+</tr>
+
+<tr>
+
+<th>Knowledge Base Records</th>
+
+<td>{{ knowledge }}</td>
+
+</tr>
+
+<tr>
+
+<th>Customer Feedback</th>
+
+<td>{{ total_feedback }}</td>
+
+</tr>
+
+<tr>
+
+<th>Unanswered Questions</th>
+
+<td>{{ unanswered }}</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="footer">
+
+<a href="/" class="btn">
+
+← Return to Chatbot
+
+</a>
+
+<form method="post" action="{% url 'logout' %}" class="logout-form">
+
+{% csrf_token %}
+
+<button type="submit" class="btn logout-btn">
+
+Logout
+
+</button>
+
+</form>
 
 </div>
 

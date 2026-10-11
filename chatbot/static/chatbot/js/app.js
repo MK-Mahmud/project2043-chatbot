@@ -80,6 +80,15 @@ function showLoading() {
    VOICE INPUT
 ========================================================== */
 
+function getSelectedVoiceLang() {
+
+    const select = document.getElementById("voiceLanguage");
+
+    return select ? select.value : "en-US";
+
+}
+
+
 function startListening() {
 
     if (!('webkitSpeechRecognition' in window)) {
@@ -92,7 +101,9 @@ function startListening() {
 
     const recognition = new webkitSpeechRecognition();
 
-    recognition.lang = "en-US";
+    const selectedLang = getSelectedVoiceLang();
+
+    recognition.lang = selectedLang;
 
     recognition.interimResults = false;
 
@@ -107,9 +118,20 @@ function startListening() {
 
     };
 
-    recognition.onerror = function () {
+    recognition.onerror = function (event) {
 
-        alert("Voice recognition failed.");
+        // Hausa speech recognition is not supported by every
+        // browser/OS combination. Give the user a clearer message
+        // instead of a generic failure alert.
+        if (selectedLang !== "en-US" && event.error === "language-not-supported") {
+
+            alert("Voice input for Hausa is not supported by your browser. Please try typing instead, or switch to English.");
+
+        } else {
+
+            alert("Voice recognition failed. Please try again.");
+
+        }
 
     };
 
@@ -132,17 +154,29 @@ function speakResponse() {
 
     const lastResponse = responses[responses.length - 1].innerText;
 
+    const selectedLang = getSelectedVoiceLang();
+
     speechSynthesis.cancel();
 
     const speech = new SpeechSynthesisUtterance(lastResponse);
 
-    speech.lang = "en-US";
+    speech.lang = selectedLang;
 
     speech.rate = 1;
 
     speech.pitch = 1;
 
     speech.volume = 1;
+
+    // Not every browser ships a Hausa voice. If one isn't available,
+    // the OS/browser default voice will still read the text using
+    // its closest available pronunciation rather than failing silently.
+    const voices = speechSynthesis.getVoices();
+    const matchingVoice = voices.find(v => v.lang === selectedLang);
+
+    if (matchingVoice) {
+        speech.voice = matchingVoice;
+    }
 
     speechSynthesis.speak(speech);
 

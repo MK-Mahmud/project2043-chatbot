@@ -57,5 +57,3 @@ class UnansweredQuery(models.Model):
 
     def __str__(self):
         return self.question
-
-# Create your models here.

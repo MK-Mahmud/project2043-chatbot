@@ -39,7 +39,7 @@
             <h1>ABC Bank SmartAssist</h1>
 
             <p>
-                AI-Powered Customer Inquiry Management System
+                AI Customer Support Assistant
             </p>
 
         </div>
@@ -48,17 +48,24 @@
 
     <div class="header-right">
 
-        <span class="status-dot"></span>
+    <span class="status-dot"></span>
 
-        <span class="status-text">
+    <span class="status-text">
 
-            Online
+        Online
 
-        </span>
+    </span>
 
-    </div>
+    <a href="{% url 'admin_panel' %}" class="admin-link">
 
+        ⚙ Administrator
+
+    </a>
+
+</div>
+    
 </header>
+ 
 
 <!-- ===========================
      MAIN CONTAINER
@@ -227,7 +234,7 @@
                         <div class="service-item">
 
                             💳
-                            <span>Account Opening</span>
+                            <span>Account Openin</span>
 
                         </div>
 
@@ -412,6 +419,11 @@
 
                 </button>
 
+                <select id="voiceLanguage" class="voice-lang-select" title="Voice language">
+                    <option value="en-US">English 🇬🇧</option>
+                    <option value="ha-NG">Hausa</option>
+                </select>
+
                 <button
 
                     type="button"
@@ -454,7 +466,9 @@
 
                     class="clear-btn"
 
-                    onclick="clearInput()">
+                    onclick="clearInput()"
+
+                    title="Clear the text you've typed">
 
                     🗑️
 
@@ -465,6 +479,18 @@
                     </span>
 
                 </button>
+
+                <a
+
+href="{% url 'clear_chat' %}"
+
+class="clear-btn clear-chat-link"
+
+title="Clear the entire conversation">
+
+🗑 Clear Chat
+
+</a>
 
             </div>
 
